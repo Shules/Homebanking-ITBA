@@ -1,20 +1,44 @@
-function mostrarAviso() {
-    let botonContinuar = document.getElementById("continuar");
-    let confirmacion = confirm("¿Seguro que desea continuar?")
-    function restarSaldo(){
-            let monto = document.getElementById("monto").value;
-            let montoFinal = (saldo - monto);
-            return montoFinal;
-        }
-    let saldoActual = restarSaldo()
-    if (confirmacion){
-        alert("¡Transferencia exitosa! Tu saldo actual es de $" + saldoActual);
-        }
-     else {
-        alert("Transferencia cancelada.")
+function mostrarSaldoActual(saldoActual)
+{
+    let saldoMostrar = document.getElementById("saldoActual");
+    saldoMostrar.textContent = saldoActual;
+}
+
+function convertirMoneda(monto, moneda)
+{
+    if (moneda == "Dolares")
+    {
+        return monto*700;
+    }
+
+    if(moneda == "Euro")
+    {
+        return monto*500;
     }
 }
 
+function mostrarAviso() {
+    let botonContinuar = document.getElementById("continuar");
+    let confirmacion = confirm("¿Seguro que desea continuar?");
+    let saldoActual = parseFloat(document.getElementById("saldoActual").textContent);
+    let monto = parseFloat(document.getElementById("monto").value);
+    let moneda = document.getElementById("Importe").value
+
+    if(moneda != 'Pesos')
+    {
+        monto = convertirMoneda(monto, moneda);
+    }
+
+    if (confirmacion && saldoActual>=monto){
+        saldoActual -= monto;
+        mostrarSaldoActual(saldoActual);
+        alert("¡Transferencia exitosa! Tu saldo actual es de $" + saldoActual);
+    }else if(saldoActual<monto){
+        alert("No dispone del dinero solicitado");
+    }else{  
+        alert("Transferencia cancelada.");
+    }
+}
 
 
 
