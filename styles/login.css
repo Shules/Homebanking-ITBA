@@ -1,3 +1,4 @@
+
 *{
 	margin: 0;
 	padding: 0;
@@ -11,11 +12,13 @@
     background-image: url(./img/background_login.jpg);
 }
 
-
+.bank_logo {
+    display: flex;
+}
 
 .bank_logo img {
-    display: block;
-    position: absolute;
+    margin-right: auto;
+    margin-left: auto; 
     top: 1px;
     left: 190px;
     min-width: 250px;
@@ -80,7 +83,6 @@ div label {
     -2px -0.5px 2px grey;
     font-size: 20px;
     text-shadow: 0px 2px 5px grey;
-    text-transform: uppercase;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -90,7 +92,7 @@ div button {
     border-radius: 5px;
     padding: 3px 60px;
     background-color: rgb(245, 34, 34);
-    border: 1.5px solid black;
+    box-shadow: darkgrey;
     font-size: 25px;
     line-height: 18px;
     font-weight: bold;
@@ -100,6 +102,7 @@ div button {
 div button:hover {
     background-color: white;
     transition-duration: 0.5s;
+    border: 1.5px solid black;
 }
 
 div button span {
@@ -138,8 +141,6 @@ div button span {
 
 .bank_logo img {
     display: block;
-    position: absolute;
-    top: 0px;
     left: 35px;
     min-width: 250px;
     min-height: 250px;
@@ -203,7 +204,6 @@ div label {
     -2px -0.5px 2px grey;
     font-size: 20px;
     text-shadow: 0px 2px 5px grey;
-    text-transform: uppercase;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -261,8 +261,6 @@ div button span {
 
 .bank_logo img {
         display: block;
-        position: absolute;
-        top: 0px;
         left: 35px;
         min-width: 150px;
         min-height: 150px;
@@ -326,7 +324,6 @@ div label {
         -2px -0.5px 2px grey;
         font-size: 20px;
         text-shadow: 0px 2px 5px grey;
-        text-transform: uppercase;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     

@@ -11,33 +11,25 @@
 
 <body>
     <main>
-        
-        <section>
-            <div id="login">
-                <h1 class="bank_name">MAZE BANK</h1> <br><br><br><br>
-                <h1>Inicio de sesión</h1><br><br>
-                <form action="" class="login-form">
-                    <label for="">Ingrese su usuario:</label><br>
-                    <input type="text" id="user"><br>
-
-                    <label for="">Ingrese su contraseña:</label><br>
-                    <input type="password" id="password"><br>
-
-
-                </form> <br>
-                <button type="sumbit" onclick="loginConfirmation()"><span>Iniciar sesion</span></button>
-    
-                <section>
-                    <div class="bank_logo">
-                        <img src="img/logo_banco.png" alt="bank_logo">
-                        
-                    </div>
-                    
-                </section>
+        <div id="login" >
+            <div class="bank_logo">
+                <img src="img/logo_banco.png" alt="bank_logo">
+                
             </div>
-        </section>
-        
+            <h1 class="bank_name">MAZE BANK</h1> <br><br><br><br>
+            <h1>Inicio de sesión</h1><br><br>
+            <form action="" class="login-form">
+                <label for="">Ingrese su usuario:</label><br>
+                <input type="text" id="user" placeholder="usuario"><br>
 
+                <label for="">Ingrese su contraseña:</label><br>
+                <input type="password" id="password" placeholder="contraseña"><br>
+
+
+            </form> <br>
+            <button type="submit" onclick="loginConfirmation()"><span>Iniciar sesion</span></button>
+
+        </div>
     </main>
 </body>
 
