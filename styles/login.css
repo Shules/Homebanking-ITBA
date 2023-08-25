@@ -2,53 +2,132 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	text-decoration: none;
 	border: none;
 	outline: none;
 }
 
+#login {
+    background-image: url(./img/background_login.jpg);
+}
+
+
+
+.bank_logo img {
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 190px;
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 250px;
+    max-height: 250px;
+}
 
 main {
     min-height: 100vh;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-section div {
+
+
+#login {
+    padding: 0 0;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     flex-direction: column;
-    min-width: 450px;
+    min-width: 630px;
     min-height: 100vh;
-    background-color: red;
+    max-width: 750px;
+    max-height: 100vh;
+    border-left: 65px solid red;
+    border-right: 65px solid red;
     
 }
 
 div h1 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
 }
 
 
-div .login-form input {
-    text-align: center;
-    border-radius: 10px;
+.bank_name {
+    font-size: 45px;
+}
+
+
+div label {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+
+.login-form input {
+    text-align: left;
+    padding: 0px 8px;
+    background-color: white;
+    border-radius: 7px;
+    border: 2px solid red;
+    max-height: 45px;
+    min-height: 45px;
+    width:400px;
+    line-height: 25px;
+    box-shadow: 2px 1.5px 2px grey,
+    -2px -0.5px 2px grey;
+    font-size: 20px;
+    text-shadow: 0px 2px 5px grey;
+    text-transform: uppercase;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-style: none;
-    box-shadow: 50px;
-    
-}
-div button {
-    border-radius: 5px;
-    padding: 3px 7px
 }
 
-div .bank_logo {
-    display: flex;
-    position: relative;
-    max-width: 50px;
-    max-height: 80px;
+
+div button {
+    height: 45px;
+    border-radius: 5px;
+    padding: 3px 60px;
+    background-color: rgb(245, 34, 34);
+    border: 1.5px solid black;
+    font-size: 25px;
+    line-height: 18px;
+    font-weight: bold;
+    cursor: pointer;
 }
+
+div button:hover {
+    background-color: white;
+    transition-duration: 0.5s;
+}
+
+div button span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  div button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: -1.5px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  div button:hover span {
+    padding-right: 20px;
+  }
+  
+  div button:hover span:after {
+    opacity: 1;
+    right: 1;
+    font-size: 35px;
+  }
+
+  div button:active {
+    box-shadow: 0 5px 3px grey;
+    transform: translateY(4px);
+  }
+
