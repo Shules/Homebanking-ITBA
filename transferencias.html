@@ -31,27 +31,25 @@
             </ul>
         </nav>
         </section>
-        <label for=""> Importe en
-            <select name="" id="">
-                <option value="">Pesos</option>
-                <option value="">Dolares</option>
-            </select>
-        </label>
         <br>
-        <label for="">
-            <input type="number" name="cash" id="monto" onclick="restarSaldo()">
-        </label>
-        <br><br>
-        <label for="">Para
-            <select name="" id="">
-                <option value="">Seleccione un contácto</option>
+        <label for="Importe"> Importe en: </label>
+            <select name="" id="Importe">
+                <option value="-">-</option>
+                <option value="Pesos">Pesos</option>
+                <option value="Dolares">Dolares</option>
+                <option value="Euro">Euros</option>
             </select>
-        </label>
+        <br>
+        <label for="montoIngresar">Monto a ingresar: </label>
+            <input type="number" name="monto" id="monto">
+        <br>
+        <label for="Receptor">Para: </label>
+            <input type="text">
         <ul>
             <li>De BN $ 255-65418/8</li>
             <li>Fecha de Ejecución 24/8/2023</li>
             <li>Plazo de Acreditación En el acto</li>
-            <li>Saldo actual $100.000</li>
+            <li>Su saldo actual es de: $<a id="saldoActual">1000</a></li>
         </ul>
         <label for="">Concepto
             <select name="" id="">
@@ -68,7 +66,7 @@
 
     </main>
     <footer>
-        <script src="/src/transferencias.js"></script>
+        <script src="src/transferencias.js"></script>
     </footer>
 </body>
 

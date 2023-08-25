@@ -129,9 +129,22 @@
         
     }
 
-    
+    input
+    {
+        border :2px solid red;
+        
+    }
 
-  
+    button
+    {
+        background-color: red;
+        border: 2px solid red;
+    }
+
+    select
+    {
+        border: 2px solid red;
+    }
 
 
 
