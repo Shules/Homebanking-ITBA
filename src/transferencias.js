@@ -29,13 +29,15 @@ function mostrarAviso() {
         monto = convertirMoneda(monto, moneda);
     }
 
-    if (confirmacion && saldoActual>=monto){
+    if (confirmacion && saldoActual >= monto && monto > 0){
         saldoActual -= monto;
         mostrarSaldoActual(saldoActual);
         alert("¡Transferencia exitosa! Tu saldo actual es de $" + saldoActual);
     }else if(saldoActual<monto){
         alert("No dispone del dinero solicitado");
-    }else{  
+    }else if(monto < 0){ 
+        alert("Monto no valido.");
+    }else {
         alert("Transferencia cancelada.");
     }
 }
