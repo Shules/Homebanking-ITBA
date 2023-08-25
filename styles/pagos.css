@@ -10,7 +10,7 @@
     
     header {
         display: flex;
-        max-width: 170vh;
+        max-width: 100%;
         max-height: 105px;
         min-height: 105px;
         align-content: center;
@@ -42,7 +42,7 @@
 
 
     #menu {
-        
+        display: inline-block;
     }
 
     #menu img {
@@ -51,13 +51,19 @@
 
     #contenedor-enlaces {
         padding-top: 50px;
-        max-width: 250px;
+        max-width: 275px;
+        min-width: 275px;
         min-height: 100vh;
         display: flex;
         flex-direction: column;   
         border-right: 3.5px solid red;
         background-color: rgb(255, 255, 255);
+        transition: 0.5s;
+    }
 
+    #contenedor-enlaces:hover {
+        min-width: 290px;
+        transition: 0.5s;
     }
 
 
@@ -76,7 +82,7 @@
         border-radius: 3px;
         box-shadow: 0px -3px 3px rgb(204, 1, 1) inset,
         0px 3px 3px rgb(204, 1, 1) inset;
-    
+        
     }
 
     #contenedor-enlaces a:link {
@@ -87,34 +93,43 @@
         color: black;
     }
 
+  
+    #contenedor-enlaces li:hover {
+        background-color: rgb(232, 68, 68);
+    }
+
     #contenedor-enlaces .inicio a:hover  {
         font-size: 32px;
         transition: 0.8s;
-        padding-left: 115px;
+        padding-left: 140px;
+        
     }
     #contenedor-enlaces .cuentas a:hover  {
         font-size: 32px;
         transition: 0.8s;
-        padding-left: 100px;
+        padding-left: 125px;
+        
     }
     #contenedor-enlaces .transf a:hover  {
         font-size: 30px;
         transition: 0.8s;
-        padding-left: 20px;
+        padding-left: 45px;
+        
     }
     #contenedor-enlaces .pagos a:hover  {
         font-size: 32px;
         transition: 0.8s;
-        padding-left: 132px;
+        padding-left: 157px;
+        
     }
     #contenedor-enlaces .prestamos a:hover  {
         font-size: 32px;
         transition: 0.8s;
-        padding-left: 68px;
+        padding-left: 93px;
+        
     }
 
     
-
 
   
 

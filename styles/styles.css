@@ -1,4 +1,3 @@
-/* CSS GENERAL*/
 *{
 	margin: 0;
 	padding: 0;
@@ -11,7 +10,7 @@
     
     header {
         display: flex;
-        max-width: 170vh;
+        max-width: 100%;
         max-height: 105px;
         min-height: 105px;
         align-content: center;
@@ -43,7 +42,7 @@
 
 
     #menu {
-        
+        display: inline-block;
     }
 
     #menu img {
@@ -52,13 +51,19 @@
 
     #contenedor-enlaces {
         padding-top: 50px;
-        max-width: 250px;
+        max-width: 275px;
+        min-width: 275px;
         min-height: 100vh;
         display: flex;
         flex-direction: column;   
         border-right: 3.5px solid red;
         background-color: rgb(255, 255, 255);
+        transition: 0.5s;
+    }
 
+    #contenedor-enlaces:hover {
+        min-width: 290px;
+        transition: 0.5s;
     }
 
 
@@ -77,7 +82,7 @@
         border-radius: 3px;
         box-shadow: 0px -3px 3px rgb(204, 1, 1) inset,
         0px 3px 3px rgb(204, 1, 1) inset;
-    
+        
     }
 
     #contenedor-enlaces a:link {
@@ -88,34 +93,43 @@
         color: black;
     }
 
-    #contenedor-enlaces .transf a:hover  {
-        font-size: 30px;
-        transition: 0.8s;
-        padding-left: 20px;
+  
+    #contenedor-enlaces li:hover {
+        background-color: rgb(232, 68, 68);
     }
 
     #contenedor-enlaces .inicio a:hover  {
         font-size: 32px;
         transition: 0.8s;
-        padding-left: 115px;
+        padding-left: 140px;
+        
     }
     #contenedor-enlaces .cuentas a:hover  {
         font-size: 32px;
         transition: 0.8s;
-        padding-left: 100px;
+        padding-left: 125px;
+        
+    }
+    #contenedor-enlaces .transf a:hover  {
+        font-size: 30px;
+        transition: 0.8s;
+        padding-left: 45px;
+        
     }
     #contenedor-enlaces .pagos a:hover  {
         font-size: 32px;
         transition: 0.8s;
-        padding-left: 132px;
+        padding-left: 157px;
+        
     }
     #contenedor-enlaces .prestamos a:hover  {
         font-size: 32px;
         transition: 0.8s;
-        padding-left: 68px;
+        padding-left: 93px;
+        
     }
-    
 
+    
 
   
 
@@ -125,83 +139,3 @@
     #cerrar {
         display: none;
     }
-
-    /*FIN MENU */
-
-
-
-/* CSS movil*/
-@media all and (max-width:412px) {
-
-    /* header*/
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    h1 {
-        float: left;
-        text-align: center;
-    }
-
-    header img {
-        width: 100%
-    }
-
-    header figure {
-        width: 20%;
-    }
-
-    /* fin header*/
-
-    /*COMIENZO MENU */
-    #menu img {
-        width: 10vw;
-    }
-
-    #menu #cerrar {
-        display: none;
-    }
-
-    #menu #contenedor-enlaces {
-        height: 0;
-        /*altura cambia a cero*/
-        transition: height 1s ease;
-        /*Efecto de transisición*/
-        overflow: hidden;
-        /*oculta lo que sobre salga*/
-    }
-
-    #contenedor-enlaces a {
-        display: block;
-        width: 100%;
-        margin-bottom: 0.25em;
-        margin-top: 0.25em;
-        text-decoration: none;
-        background-color: grey;
-        padding: 1em;
-        /*genera espacio a la vuelta, lo hace mas "tocable"*/
-        color: black;
-        font-size: 1.2rem;
-    }
-
-    #menu:target #abrir {
-        display: none;
-        /*oculta la imagen de hamburguesa*/
-    }
-
-    #menu:target #cerrar {
-        display: block;
-        /*muestra la imagen de x*/
-    }
-
-    #menu:target #contenedor-enlaces {
-        height: 40vh;
-        transition: height 1.5s ease;
-    }
-
-    /*FIN MENU */
-}
-
