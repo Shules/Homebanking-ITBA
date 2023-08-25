@@ -25,6 +25,7 @@
     min-height: 250px;
     max-width: 250px;
     max-height: 250px;
+    margin-top: 50px;
 }
 
 main {
@@ -44,17 +45,32 @@ main {
     position: relative;
     flex-direction: column;
     min-width: 630px;
-    min-height: 100vh;
     max-width: 750px;
+    min-height: 100vh;
     max-height: 100vh;
     border-left: 65px solid red;
     border-right: 65px solid red;
+    margin-top: -150px;
     
+}
+
+#user {
+    margin-bottom: 2rem;
+}
+
+#boton-iniciarSesion{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(199,174,174,0.75);
 }
 
 div h1 {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 35px;
+    margin-top: -40px;
+}
+
+.title{
+    font-size: large;
+    margin-bottom: -30px;
 }
 
 
@@ -86,7 +102,6 @@ div label {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-
 div button {
     height: 45px;
     border-radius: 5px;
@@ -103,37 +118,56 @@ div button:hover {
     background-color: white;
     transition-duration: 0.5s;
     border: 1.5px solid black;
+    box-shadow: ;
 }
 
 div button span {
     display: inline-block;
     position: relative;
     transition: 0.5s;
-  }
+}
   
-  div button span:after {
+div button span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: -1.5px;
     right: -20px;
     transition: 0.5s;
-  }
+}
   
-  div button:hover span {
+div button:hover span {
     padding-right: 20px;
-  }
+}
   
-  div button:hover span:after {
+div button:hover span:after {
     opacity: 1;
     right: 1;
     font-size: 35px;
-  }
+}
 
-  div button:active {
+div button:active {
     box-shadow: 0 5px 3px grey;
     transform: translateY(4px);
-  }
+}
+
+#tyc {
+    color: navy;
+    text-align: center;
+}
+
+#atencion {
+    color: coral;
+    text-align: center;
+}
+
+footer {
+    margin-top: -70px;
+}
+
+footer a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
 
 
