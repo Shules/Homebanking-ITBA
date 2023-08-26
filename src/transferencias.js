@@ -22,7 +22,7 @@ function mostrarAviso() {
     let confirmacion = confirm("¿Seguro que desea continuar?");
     let saldoActual = parseFloat(document.getElementById("saldoActual").textContent);
     let monto = parseFloat(document.getElementById("monto").value);
-    let moneda = document.getElementById("Importe").value
+    let moneda = document.getElementById("Importe").value;
 
     if(moneda != 'Pesos')
     {
@@ -35,13 +35,9 @@ function mostrarAviso() {
         alert("¡Transferencia exitosa! Tu saldo actual es de $" + saldoActual);
     }else if(saldoActual<monto){
         alert("No dispone del dinero solicitado");
-    }else if(monto < 0){ 
+    }else if(monto <= 0){ 
         alert("Monto no valido.");
     }else {
         alert("Transferencia cancelada.");
     }
 }
-
-
-
-

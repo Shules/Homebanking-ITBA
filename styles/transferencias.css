@@ -140,59 +140,76 @@
         padding-top: 100px;
         padding-bottom: 25%;
         background-color: darkred;
-        
-        
-        #importes
-        {
-            background-color: lightblue;
-            display: flex;
-            border-radius: 5px;
+    }
 
-            select
-            {
-                border: 5px solid red;
-            }
-        }
-    
-        #montoIngresar
-        {
-            background-color: lightblue;
-            display:flex;
-            border-radius: 5px;
+    .importes
+    {
+        background-color: lightblue;
+        display: flex;
+        border-radius: 5px;
+    }
 
-            input
-            {
-                border: 5px solid red;
-            }
-        }
-    
-        #receptor
-        {
-            background-color: lightblue;
-            display:flex;
-            border-radius: 5px;
-        }
-    
-        #remitente
-        {
-            background-color: lightblue;
-            display:flex;
-            border-radius: 5px;
-        }
-    
-        #metodo
-        {
-            background-color: lightblue;
-            display:flex;
-            border-radius: 5px;
-        }
-    
-        #botonContinuar
-        {
-            background-color: lightblue;
-            display:flex;
-            border-radius: 5px;
-        }
+    select
+    {
+        margin-left: 5px;
+        border-radius: 5px;
+        text-align: center;
+        border: 3px solid lightcoral;
+        background-color: lightblue;
+    }
+
+    input
+    {
+        margin-left: 5px;
+        border-radius: 5px;
+        text-align: center;
+        border: 3px solid lightcoral;
+        background-color: lightblue;
+    }
+
+    #montoIngresar
+    {
+        background-color: lightblue;
+        display:flex;
+        border-radius: 5px;
+
+    }
+
+    #receptor
+    {
+        background-color: lightblue;
+        display:flex;
+        border-radius: 5px;
+    }
+
+    #remitente
+    {
+        background-color: lightblue;
+        display:flex;
+        border-radius: 5px;
+    }
+
+    #metodo
+    {
+        background-color: lightblue;
+        display:flex;
+        border-radius: 5px;
+    }
+
+    #botonContinuar
+    {
+        align-items: center;
+    }
+
+    #continuar
+    {
+        padding-left: 20px;
+        width: 100px;
+        height: 25px;
+        align-items: center;
+        background-color: lightblue;
+        display:flex;
+        border-radius: 5px;
     }
 
     @media screen and (max-device-width:850px) and (max-device-height:1280px) {

@@ -34,7 +34,7 @@
         <br>
         <br>
         <form class="menu-transacciones">
-            <div id="importes">
+            <div class="importes">
                 <label> Importe en </label>
                     <select name="" id="Importe">
                         <option value="-">-</option>
@@ -62,26 +62,27 @@
                     <li>De BN $ 255-65418/8</li>
                     <li>Fecha de Ejecución 24/8/2023</li>
                     <li>Plazo de Acreditación En el acto</li>
-                    <li>Su saldo actual es de: $<a id="saldoActual">1000</a></li>
+                    <li>Su saldo actual es de: $<a id="saldoActual">5000</a></li>
                 </ul>
             </div>
             <br>
             <div id="metodo">
                 <label for="metodo">Concepto
                     <select name="" id="">
-                        <option value="">Cuota</option>
-                        <option value="">Factura</option>
-                        <option value="">Inmobiliarias</option>
-                        <option value="">Préstamo</option>
-                        <option value="">Seguro</option>
-                        <option value="">Varios</option>
+                        <option value="-">-</option>
+                        <option value="Cuota">Cuota</option>
+                        <option value="Factura">Factura</option>
+                        <option value="Inmobiliarias">Inmobiliarias</option>
+                        <option value="Prestamo">Préstamo</option>
+                        <option value="Seguro">Seguro</option>
+                        <option value="Varios">Varios</option>
                     </select>
                 </label>
             </div>
             <br>
             <br>
             <div id="botonContinuar">
-                <button id="continuar" onclick="mostrarAviso()">Continuar</button>
+                <button type="button" id="continuar" onclick="mostrarAviso()">Continuar</button>
             </div>
         </form>
     </main>
