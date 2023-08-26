@@ -42,6 +42,7 @@
 
 
     #menu {
+        float: left;
         display: inline-block;
     }
 
@@ -129,24 +130,89 @@
         
     }
 
-    input
+    .menu-transacciones
     {
-        border :2px solid red;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        vertical-align: middle;
+        margin-top: -36px;
+        padding-top: 100px;
+        padding-bottom: 25%;
+        background-color: darkred;
         
+        
+        #importes
+        {
+            background-color: lightblue;
+            display: flex;
+            border-radius: 5px;
+
+            select
+            {
+                border: 5px solid red;
+            }
+        }
+    
+        #montoIngresar
+        {
+            background-color: lightblue;
+            display:flex;
+            border-radius: 5px;
+
+            input
+            {
+                border: 5px solid red;
+            }
+        }
+    
+        #receptor
+        {
+            background-color: lightblue;
+            display:flex;
+            border-radius: 5px;
+        }
+    
+        #remitente
+        {
+            background-color: lightblue;
+            display:flex;
+            border-radius: 5px;
+        }
+    
+        #metodo
+        {
+            background-color: lightblue;
+            display:flex;
+            border-radius: 5px;
+        }
+    
+        #botonContinuar
+        {
+            background-color: lightblue;
+            display:flex;
+            border-radius: 5px;
+        }
     }
 
-    button
-    {
-        background-color: red;
-        border: 2px solid red;
+    @media screen and (max-device-width:850px) and (max-device-height:1280px) {
+        #menu
+        {
+            display: none;
+            width: 25px;
+            height: 25px;
+        }
+        .menu-transacciones
+        {
+            display: inline-block;
+            margin-top: 0%;
+        }
+
+        #cerrar
+        {
+            display: inline-block;
+        }
     }
-
-    select
-    {
-        border: 2px solid red;
-    }
-
-
 
     #abrir,
     #cerrar {

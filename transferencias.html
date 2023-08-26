@@ -32,38 +32,58 @@
         </nav>
         </section>
         <br>
-        <label for="Importe"> Importe en: </label>
-            <select name="" id="Importe">
-                <option value="-">-</option>
-                <option value="Pesos">Pesos</option>
-                <option value="Dolares">Dolares</option>
-                <option value="Euro">Euros</option>
-            </select>
         <br>
-        <label for="montoIngresar">Monto a ingresar: </label>
-            <input type="number" name="monto" id="monto">
-        <br>
-        <label for="Receptor">Para: </label>
-            <input type="text">
-        <ul>
-            <li>De BN $ 255-65418/8</li>
-            <li>Fecha de Ejecución 24/8/2023</li>
-            <li>Plazo de Acreditación En el acto</li>
-            <li>Su saldo actual es de: $<a id="saldoActual">1000</a></li>
-        </ul>
-        <label for="">Concepto
-            <select name="" id="">
-                <option value="">Cuota</option>
-                <option value="">Factura</option>
-                <option value="">Inmobiliarias</option>
-                <option value="">Préstamo</option>
-                <option value="">Seguro</option>
-                <option value="">Varios</option>
-            </select>
-        </label>
-        <br><br>
-        <button id="continuar" onclick="mostrarAviso()">Continuar</button>
-
+        <form class="menu-transacciones">
+            <div id="importes">
+                <label> Importe en </label>
+                    <select name="" id="Importe">
+                        <option value="-">-</option>
+                        <option value="Pesos">Pesos</option>
+                        <option value="Dolares">Dolares</option>
+                        <option value="Euro">Euros</option>
+                    </select>
+            </div>
+            <br>
+            <br>
+            <div id="montoIngresar">
+                <label for="montoIngresar">Monto a ingresar </label>
+                    <input type="number" name="monto" id="monto">
+            </div>
+            <br>
+            <br>
+            <div id="receptor">
+                <label for="Receptor">Para </label>
+                    <input type="text">
+            </div>
+            <br>
+            <br>
+            <div id="remitente">
+                <ul>
+                    <li>De BN $ 255-65418/8</li>
+                    <li>Fecha de Ejecución 24/8/2023</li>
+                    <li>Plazo de Acreditación En el acto</li>
+                    <li>Su saldo actual es de: $<a id="saldoActual">1000</a></li>
+                </ul>
+            </div>
+            <br>
+            <div id="metodo">
+                <label for="metodo">Concepto
+                    <select name="" id="">
+                        <option value="">Cuota</option>
+                        <option value="">Factura</option>
+                        <option value="">Inmobiliarias</option>
+                        <option value="">Préstamo</option>
+                        <option value="">Seguro</option>
+                        <option value="">Varios</option>
+                    </select>
+                </label>
+            </div>
+            <br>
+            <br>
+            <div id="botonContinuar">
+                <button id="continuar" onclick="mostrarAviso()">Continuar</button>
+            </div>
+        </form>
     </main>
     <footer>
         <script src="src/transferencias.js"></script>
