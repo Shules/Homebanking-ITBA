@@ -48,8 +48,8 @@ main {
     max-width: 750px;
     min-height: 100vh;
     max-height: 100vh;
-    border-left: 65px solid red;
-    border-right: 65px solid red;
+    /* border-left: 65px solid red;
+    border-right: 65px solid red; */
     margin-top: -150px;
     
 }
@@ -59,7 +59,7 @@ main {
 }
 
 #boton-iniciarSesion{
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(199,174,174,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(199,174,174,0.75);
 }
 
 div h1 {
@@ -118,7 +118,6 @@ div button:hover {
     background-color: white;
     transition-duration: 0.5s;
     border: 1.5px solid black;
-    box-shadow: ;
 }
 
 div button span {
@@ -162,7 +161,11 @@ div button:active {
 }
 
 footer {
-    margin-top: -70px;
+    margin-top: -100px;
+}
+
+footer p {
+    font-size: x-large;
 }
 
 footer a {
@@ -202,8 +205,8 @@ main {
     min-height: 100vh;
     max-width: 320px;
     max-height: 100vh;
-    border-left: 48px solid red;
-    border-right: 48px solid red;
+    /* border-left: 48px solid red;
+    border-right: 48px solid red; */
     
 }
 
@@ -322,8 +325,8 @@ main {
         min-height: 100vh;
         max-width: 220px;
         max-height: 100vh;
-        border-left: 30px solid red;
-        border-right: 30px solid red;
+        /* border-left: 30px solid red;
+        border-right: 30px solid red; */
         
     }
     
@@ -373,5 +376,16 @@ div button {
         line-height: 18px;
         font-weight: bold;
         cursor: pointer;
+    }
+}
+
+@media screen and (min-device-width: 415px) and (max-device-width: 720px) {
+
+    main {
+        margin-top: -250px;
+    }
+
+    footer {
+        margin: -50px 60px 0px 60px;
     }
 }
