@@ -30,25 +30,25 @@
                     <li class="prestamos"><a href="#">PRESTAMOS</a></li>
                 </ul>
             </nav>
-            
+        </section>    
             <div class="prestamo-menu">
                 <h1>Nuevo préstamo</h1>
-                <label for=""> Seleccioná tu nuevo préstamo
+                <label for="prestamo"> Seleccioná tu nuevo Préstamo</label>
                     <br>
-                    <input type="radio"><a href=""> Personal</a>
+                    <h2>Personal<input id="Personal" type="radio" name="prestamo" value="Personal"></h2>
                     <br>
-                    <input type="radio"><a href=""> Emprendimiento</a>
+                    <h2>Emprendimiento<input id="Emprendimiento" type="radio" name="prestamo" value="Emprendimiento"></h2>
                     <br>
-                    <input type="radio"><a href=""> Capital de trabajo</a>
-                </label>
+                    <h2>Capital de trabajo<input id="Capital" type="radio" name="prestamo" value="Capital"></h2>
                 <br><br>
-                <button>Cancelar</button>
-                <button>Continuar</button>
+                <h2><button id="cancelar" type="button" onclick="cancelacion()">Cancelar</button>
+                    <button id="confirmar" type="button" onclick="mostrarAviso()">Continuar</button>
+                </h2>
+                <p id="confirmacion"></p>
             </div>
-        </section>
     </main>
     <footer>
-
+        <script src="src/prestamos.js"></script>
     </footer>
 </body>
 
