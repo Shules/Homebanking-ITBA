@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
     <title>Maze Bank</title>
 </head>
+
 <body>
     <header>
         <figure>
@@ -16,25 +18,128 @@
         </figure>
         <h1>Maze Bank</h1>
     </header>
-    <main>
-        <section id="menu">
-            <a href="#menu"><img src="img/burger_menu.png" alt="Logo abrir menu" id="abrir"></a>
-            <a href="#"><img src="img/cerrar_menu.png" alt="Logo cerrar menu" id="cerrar"></a>
-        <nav id="contenedor-enlaces">
+    <section id="cuerpo">
+        <aside>
+            <section id="menu">
+                <a href="#menu"><img src="img/burger_menu.png" alt="Logo abrir menu" id="abrir"></a>
+                <a href="#"><img src="img/cerrar_menu.png" alt="Logo cerrar menu" id="cerrar"></a>
+                <nav id="contenedor-enlaces">
+                    <ul>
+                        <li class="inicio"><a href="#">INICIO</a></li>
+                        <li class="cuentas"><a href="cuentas.html">CUENTAS</a></li>
+                        <li class="transf"><a href="transferencias.html">TRANSFERENCIAS</a></li>
+                        <li class="pagos"><a href="pagos.html">PAGOS</a></li>
+                        <li class="prestamos"><a href="prestamos.html">PRESTAMOS</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </aside>
+        <main>
+            <h2>Quienes Somos</h2>
+            <section id="info">
+                <p>Somos <strong>Maze Bank</strong> un banco intenacional, contamos con 128 años antguedad con clientes
+                    en todos lados del mundo ofrecemos con nuestro <em>Home-Bankin</em> brindamos una experiencia
+                    distinta de lo tradicional.Nuestra atencion se basa en la interaccion del cliente con su dinero
+                    poder manejar tu dinero desde cualquier lado dle mundo con solo unos cliks</p>
+                <p>lema de <strong>Maze bank</strong>: <em>"Invertir desde tu casa"</em> </p>
+
+            </section>
+            <section id="nave">
+                <h2>Maneja tu cuenta</h2>
+                <ul>
+                    <li>
+                        <a href="prestamos.html">Solicita Prestamos</a>
+                    </li>
+                    <li>
+                        <a href="pagos.html">Ultimos Pagos</a>
+                    </li>
+                    <li>
+                        <a href="transferencias.html">Mira tus tranferencias</a>
+                    </li>
+
+                </ul>
+
+            </section>
+
+
+            <section id="contenido">
+
+                <article>
+                    <figure>
+                        <img src="img/maze bank.webp" alt="imagen del maze bank">
+                    </figure>
+                </article>
+
+                <article>
+                    <h2>Nuestra Sede</h2>
+                    <p>La sede de la empresa, Maze Bank Tower , está ubicada en Pillbox Hill , en el centro de Los
+                        Santos . Este rascacielos es el edificio más alto de San Andreas y de la costa oeste de los
+                        Estados Unidos de América . La compañía también patrocina el Maze Bank Arena en La Puerta , el
+                        estadio principal de la ciudad, y patrocina la película Meltdown de Richards Majestic
+                        Productions .</p>
+                    <p>
+                        Es un edificio extremadamente proyectado en la mayoría de películas hollywoodenses con temática
+                        en la ciudad de Los Santos.
+                    </p>
+
+                    <p>Este edificio está construido para soportar los frecuentes terremotos que tienen , pudiendo
+                        soportar uno de hasta 8 grados en la Escala de Richter. la torre es coronada por una corona de
+                        cristal que se ilumina de noche y a veces en celebraciones la corona se ilumina de varios
+                        colores.</p>
+
+                </article>
+
+            </section>
+            <section id="formulario">
+                <form action="" method="post">
+                    <legend>Solicita tu tarjeta</legend>
+
+                    <label for="ape">Apellido:
+                        <input type="text" name="ape" id="ape" required></label>
+
+                    <label for="nom">Nombre:
+                        <input type="text" name="nom" required></label>
+
+
+                    <button type="submit">solicitar</button>
+                </form>
+
+            </section>
+
+        </main>
+    </section>
+    <footer>
+        <section id="cond">
             <ul>
-                <li class="inicio"><a href="#">INICIO</a></li>
-                <li class="cuentas"><a href="cuentas.html">CUENTAS</a></li>
-                <li class="transf"><a href="transferencias.html">TRANSFERENCIAS</a></li>
-                <li class="pagos"><a href="pagos.html">PAGOS</a></li>
-                <li class="prestamos"><a href="prestamos.html">PRESTAMOS</a></li>
+                <li><a href="">Terminos y condiciones</a></li>
+                <li><a href="">Privacidad</a></li>
+                <li>© 2023, Maze Bank, S.A.</li>
             </ul>
-        </nav>
+
+        </section>
+        <section id="logo">
+            <figure>
+                <img src="img/logo_banco.png" alt="Imagen del logo del banco">
+            </figure>
+            <h1>Maze Bank</h1>
+
+        </section>
+        <section id="redes">
+            <h4>Contactanos</h4>
+            <ul>
+                <li><a href="tel:+54936854423"><img src="img/png-clipart-phone-phone.png" alt="logo telefono"></a></li>
+                <li><a href="https://www.facebook.com/"><img src="img/Facebook_f_logo_(2019).svg.webp"
+                            alt="logo facebook"></a></li>
+                <li><a href="https://twitter.com/"><img src="img/Logo_of_Twitter.svg.png" alt="logo twitter"></a></li>
+                <li><a href="mailto:mazebank@gmail.com"><img
+                            src="img/png-transparent-computer-icons-email-electronic-mailing-list-email-miscellaneous-logo-black-and-white.png"
+                            alt="logo gmail"></a></li>
+
+            </ul>
+
         </section>
 
-    </main>
-    <footer>
-
     </footer>
-<script></script>    
 </body>
+
 </html>
