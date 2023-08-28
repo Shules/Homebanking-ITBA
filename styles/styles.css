@@ -1,162 +1,41 @@
 /* CSS GENERAL*/
-*{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-    text-decoration: none;
-	border: none;
-	outline: none;
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-    
+/* COMIENZO M0VIL*/
+@media all and (min-width:80px) {
+    /*COMIENZO HEADER*/
+
     header {
         display: flex;
-        max-width: 170vh;
-        max-height: 105px;
-        min-height: 105px;
-        align-content: center;
-        border-bottom: 5px solid red;
-        border-radius: 5px;
-    }
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
 
+    }
 
     header img {
-        max-width: 105px;
-        min-width: 105px;
+        width: 100%;
+
     }
 
+    header figure {
+        width: 15%;
+
+    }
 
     header h1 {
-        display: block;
         font-size: 42px;
-        margin-left: 6px;
-        margin-top: 27px;
-    }
-    
-
-    header figure {
-        max-width: 110px;
-        max-height: 110px;
-        left: 20px;
-        
-    }
-
-
-    #menu {
-        
-    }
-
-    #menu img {
-        display: none;
-    }
-
-    #contenedor-enlaces {
-        padding-top: 50px;
-        max-width: 250px;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;   
-        border-right: 3.5px solid red;
-        background-color: rgb(255, 255, 255);
 
     }
 
-
-    #contenedor-enlaces li {
-        height: 60px;
-        line-height: 60px;
-        list-style: none;
-        text-decoration: none;
-        font-size: 28px;  
-        font-family: 'Inconsolata', monospace;
-        font-weight: 600;
-        margin-bottom: 50px;
-        padding-left: 10px;
-        padding-right: 15px;
-        background-color: rgb(233, 92, 92);
-        border-radius: 3px;
-        box-shadow: 0px -3px 3px rgb(204, 1, 1) inset,
-        0px 3px 3px rgb(204, 1, 1) inset;
-    
-    }
-
-    #contenedor-enlaces a:link {
-        color: black;
-    }
-
-    #contenedor-enlaces a:visited {
-        color: black;
-    }
-
-    #contenedor-enlaces .transf a:hover  {
-        font-size: 30px;
-        transition: 0.8s;
-        padding-left: 20px;
-    }
-
-    #contenedor-enlaces .inicio a:hover  {
-        font-size: 32px;
-        transition: 0.8s;
-        padding-left: 115px;
-    }
-    #contenedor-enlaces .cuentas a:hover  {
-        font-size: 32px;
-        transition: 0.8s;
-        padding-left: 100px;
-    }
-    #contenedor-enlaces .pagos a:hover  {
-        font-size: 32px;
-        transition: 0.8s;
-        padding-left: 132px;
-    }
-    #contenedor-enlaces .prestamos a:hover  {
-        font-size: 32px;
-        transition: 0.8s;
-        padding-left: 68px;
-    }
-    
-
-
-  
-
-
-
-    #abrir,
-    #cerrar {
-        display: none;
-    }
-
-    /*FIN MENU */
-
-
-
-/* CSS movil*/
-@media all and (max-width:412px) {
-
-    /* header*/
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
-    h1 {
-        float: left;
-        text-align: center;
-    }
-
-    header img {
-        width: 100%
-    }
-
-    header figure {
-        width: 20%;
-    }
-
-    /* fin header*/
+    /*FIN HEADER*/
 
     /*COMIENZO MENU */
+
     #menu img {
         width: 10vw;
     }
@@ -203,5 +82,520 @@
     }
 
     /*FIN MENU */
+
+    /*COMIENZO MAIN*/
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main h2 {
+        text-align: center;
+        font-size: 1.3;
+
+    }
+
+    #info {
+        font-size: 1.2em;
+
+    }
+
+    #info p {
+        padding: 0.5em;
+    }
+
+    #contenido {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #contenido article figure img {
+        width: 50vh;
+        margin-bottom: 0.5em;
+    }
+
+    #contenido article figure {
+        width: 100%;
+    }
+
+    #contenido article p {
+        padding: 0.5em;
+        font-size: 1.2em;
+    }
+
+    #nave ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        list-style: none;
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+    }
+
+    #nave ul li {
+        display: block;
+        margin-bottom: 1em;
+        padding: 1em;
+        border-top: solid red;
+        border-bottom: solid red;
+        text-align: center;
+
+    }
+
+    #nave ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.2em;
+
+
+
+
+    }
+
+    #formulario {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 3em;
+
+
+
+    }
+
+    #formulario form {
+        width: 100vw;
+        margin-top: 1rem;
+        padding: 1em;
+        text-align: center;
+        border-top: black solid;
+        border-bottom: black solid;
+
+    }
+
+    #formulario form label {
+        display: block;
+        font-size: 1.5em;
+        margin-top: 0.5em;
+    }
+
+    #formulario legend {
+        text-align: center;
+        background-color: white;
+        font-size: 1.5em;
+        border: 0.1em solid red;
+        padding: 0.2em;
+    }
+
+    #formulario input {
+        padding: 0.3em;
+        border: solid black .1em;
+    }
+
+    #formulario button {
+        margin: 1em;
+        padding: 1em;
+        background-color: white;
+        border: solid red;
+
+
+    }
+
+    /*FIN MAIN*/
+
+
+
+    /*COMIENZO FOOTER*/
+    footer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #cond {
+        width: 33%;
+        display: flex;
+        justify-content: start;
+    }
+
+    #cond ul {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+
+    }
+
+    #cond ul li {
+        list-style: none;
+        margin: 3px;
+    }
+
+    #cond ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+
+    #logo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 33%;
+    }
+
+    #logo img {
+        width: 100%;
+
+    }
+
+    #logo figure {
+        width: 60px;
+
+    }
+
+    #logo h1 {
+        font-size: 20px;
+    }
+
+    #redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        width: 33%;
+
+    }
+
+    #redes ul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0.5em;
+
+    }
+
+    #redes ul li {
+        margin: 0.5em;
+        list-style: none;
+
+    }
+
+    #redes ul li img {
+        width: 3vh;
+
+    }
+
+    #redes h4 {
+        font-size: 25px;
+    }
+
+    /*FIN fOOTER */
+
 }
 
+/* FIN M0VIL*/
+/* COMIENZO MONITO*/
+@media all and (min-width:1080px) {
+
+    /*COMIENZO CUERPO*/
+    #cuerpo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    aside {
+        width: 20%;
+    }
+
+    /*COMIENZO HEADER*/
+
+    header {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+        height: 15vh;
+        border-bottom: red solid;
+
+    }
+
+    header img {
+        width: 100%;
+
+    }
+
+    header figure {
+        width: 8vw;
+
+    }
+
+    header h1 {
+        font-size: 42px;
+
+    }
+
+    /*FIN HEADER*/
+    /*COMIENZO MAIN*/
+    main {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-left: red solid;
+
+    }
+
+    main h2 {
+        text-align: center;
+        font-size: 1.3;
+        margin-top: 1em;
+    }
+
+    #info {
+        font-size: 1.4em;
+
+    }
+
+    #info p {
+        padding: 0.5em;
+    }
+
+    #contenido {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #contenido article figure img {
+        margin: 1em;
+        width: 50vh;
+    }
+
+    #contenido article figure {
+        width: 100%;
+        float: left;
+    }
+
+    #contenido article p {
+        padding: 0.5em;
+        font-size: 1.2em;
+    }
+
+    #nave ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        list-style: none;
+        margin-top: 3em;
+        margin-bottom: 3em;
+
+    }
+
+    #nave ul li {
+        display: block;
+        padding: 1em;
+        border: solid red;
+        border-radius: 0.5em;
+    }
+
+    #nave ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1.2em;
+
+
+
+
+    }
+
+    #formulario {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 3em;
+
+
+
+    }
+
+    #formulario form {
+        width: 30%;
+        margin-top: 1rem;
+        padding: 1em;
+        text-align: center;
+        border: black solid;
+        border-radius: 1em;
+    }
+
+    #formulario form label {
+        display: block;
+        font-size: 1.2em;
+        margin-top: 0.5em;
+    }
+
+    #formulario legend {
+        text-align: center;
+        background-color: white;
+        font-size: 1.5em;
+        border: 0.1em solid red;
+        padding: 0.2em;
+    }
+
+    #formulario input {
+        border: solid black .1em;
+    }
+
+    #formulario button {
+        margin: 1em;
+        padding: 1em;
+        background-color: white;
+        border: solid red;
+
+
+    }
+
+    /*FIN MAIN*/
+    /*COMIENZO MENU*/
+    #menu img {
+        display: none;
+    }
+
+    #contenedor-enlaces {
+        width: 30vw;
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+
+    #contenedor-enlaces li {
+        font-size: 28px;
+        margin-top: 1%;
+
+    }
+
+    #contenedor-enlaces .transf a:hover {
+        font-size: 30px;
+        transition: 0.8s;
+        padding-left: 20px;
+    }
+
+    #contenedor-enlaces .inicio a:hover {
+        font-size: 32px;
+        transition: 0.8s;
+        padding-left: 100px;
+    }
+
+    #contenedor-enlaces .cuentas a:hover {
+        font-size: 32px;
+        transition: 0.8s;
+        padding-left: 80px;
+    }
+
+    #contenedor-enlaces .pagos a:hover {
+        font-size: 32px;
+        transition: 0.8s;
+        padding-left: 100px;
+    }
+
+    #contenedor-enlaces .prestamos a:hover {
+        font-size: 32px;
+        transition: 0.8s;
+        padding-left: 60px;
+    }
+
+    #abrir,
+    #cerrar {
+        display: none;
+    }
+
+    /*FIN MENU */
+    /*COMIENZO FOOTER*/
+    footer {
+        display: flex;
+        flex-direction: row;
+        border-top: red solid;
+    }
+
+    #cond {
+        width: 33%;
+        display: flex;
+        justify-content: start;
+    }
+
+    #cond ul {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+
+    }
+
+    #cond ul li {
+        list-style: none;
+        margin: 3px;
+    }
+
+    #cond ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #logo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 33%;
+    }
+
+    #logo img {
+        width: 100%;
+
+    }
+
+    #logo figure {
+        width: 60px;
+
+    }
+
+    #logo h1 {
+        font-size: 30px;
+    }
+
+    #redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        width: 33%;
+
+    }
+
+    #redes ul {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #redes ul li {
+        margin: 1em;
+        list-style: none;
+    }
+
+    #redes ul li img {
+        width: 3vh;
+
+    }
+
+    #redes h4 {
+        font-size: 25px;
+    }
+
+    /*FIN fOOTER */
+
+}
+
+/* FIN MONITOR*/
