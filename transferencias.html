@@ -34,9 +34,10 @@
         <br>
         <br>
         <form class="menu-transacciones">
+            <h2>Transferencias</h2>
             <div class="importes">
-                <label> Importe en </label>
-                    <select name="" id="Importe">
+                <label class="prueba"> Importe en </label>
+                    <select name="" id="Importe" class="prueba2">
                         <option value="-">-</option>
                         <option value="Pesos">Pesos</option>
                         <option value="Dolares">Dolares</option>
@@ -46,29 +47,32 @@
             <br>
             <br>
             <div id="montoIngresar">
-                <label for="montoIngresar">Monto a ingresar </label>
-                    <input type="number" name="monto" id="monto">
+                <label class="prueba">Monto a ingresar </label> <br>
+                    <input type="number" name="monto" id="monto" class="prueba2" >
             </div>
             <br>
             <br>
             <div id="receptor">
-                <label for="Receptor">Para </label>
-                    <input type="text">
+                <label class="prueba">Para </label>
+                    <input type="text" class="prueba2">
             </div>
             <br>
             <br>
             <div id="remitente">
-                <ul>
+                <ul class="prueba" >
                     <li>De BN $ 255-65418/8</li>
+                    <br>
                     <li>Fecha de Ejecución 24/8/2023</li>
+                    <br>
                     <li>Plazo de Acreditación En el acto</li>
+                    <br>
                     <li>Su saldo actual es de: $<a id="saldoActual">5000</a></li>
                 </ul>
             </div>
             <br>
             <div id="metodo">
-                <label for="metodo">Concepto
-                    <select name="" id="">
+                <label class="prueba">Concepto</label>
+                    <select name="" class="prueba2">
                         <option value="-">-</option>
                         <option value="Cuota">Cuota</option>
                         <option value="Factura">Factura</option>
@@ -77,7 +81,7 @@
                         <option value="Seguro">Seguro</option>
                         <option value="Varios">Varios</option>
                     </select>
-                </label>
+                
             </div>
             <br>
             <br>
@@ -87,6 +91,33 @@
         </form>
     </main>
     <footer>
+            <section id="cond">
+                <ul>
+                    <li><a href="">Terminos y condiciones</a></li>
+                    <li><a href="">Privacidad</a></li>
+                    <li>© 2023, Maze Bank, S.A.</li>
+                </ul>
+    
+            </section>
+            <section id="logo">
+                <figure>
+                    <img src="img/logo_banco.png" alt="Imagen del logo del banco">
+                </figure>
+                <h1>Maze Bank</h1>
+    
+            </section>
+            <section id="redes">
+                <h4>Contactanos</h4>
+                <ul>
+                    <li><a href="tel:+54936854423"><img src="img/png-clipart-phone-phone.png" alt="logo telefono"></a></li>
+                    <li><a href="https://www.facebook.com/"><img src="img/Facebook_f_logo_(2019).svg.webp"
+                                alt="logo facebook"></a></li>
+                    <li><a href="https://twitter.com/"><img src="img/Logo_of_Twitter.svg.png" alt="logo twitter"></a></li>
+                    <li><a href="mailto:mazebank@gmail.com"><img
+                                src="img/png-transparent-computer-icons-email-electronic-mailing-list-email-miscellaneous-logo-black-and-white.png"
+                                alt="logo gmail"></a></li>
+                </ul>
+            </section>
         <script src="src/transferencias.js"></script>
     </footer>
 </body>
