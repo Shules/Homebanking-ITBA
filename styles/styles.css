@@ -204,6 +204,13 @@
 
     /*FIN MAIN*/
 
+    /* FORMULARIO */
+    .formSolicitarTarjeta{
+        background-color: aliceblue;
+        box-shadow: 0 16px 20px -18px #6e6e6e;
+        border-radius: 1rem;
+    }
+
 
 
     /*COMIENZO FOOTER*/
