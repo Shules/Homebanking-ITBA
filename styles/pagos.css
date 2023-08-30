@@ -8,171 +8,171 @@
 }
 
     
-    header {
-        display: flex;
-        max-width: 100%;
-        max-height: 105px;
-        min-height: 105px;
-        align-content: center;
-        border-bottom: 5px solid red;
-        border-radius: 5px;
-    }
+header {
+    display: flex;
+    max-width: 100%;
+    max-height: 105px;
+    min-height: 105px;
+    align-content: center;
+    border-bottom: 5px solid red;
+    border-radius: 5px;
+}
 
 
-    header img {
-        max-width: 105px;
-        min-width: 105px;
-    }
+header img {
+    max-width: 105px;
+    min-width: 105px;
+}
 
 
-    header h1 {
-        display: block;
-        font-size: 42px;
-        margin-left: 6px;
-        margin-top: 27px;
-    }
+header h1 {
+    display: block;
+    font-size: 42px;
+    margin-left: 6px;
+    margin-top: 27px;
+}
+
+
+header figure {
+    max-width: 110px;
+    max-height: 110px;
+    left: 20px;
+}
+
+
+#menu {
+    display: inline-block;
+}
+
+#menu img {
+    display: none;
+}
+
+#contenedor-enlaces {
+    padding-top: 50px;
+    max-width: 20vw;
+    min-width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;   
+    border-right: 3.5px solid red;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+#contenedor-enlaces:hover {
+    min-width: 290px;
+    transition: 0.5s;
+}
+
+
+#contenedor-enlaces li {
+    height: 4vw;
+    line-height: 3vw;
+    list-style: none;
+    text-decoration: none;
+    font-size: 2vw;  
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+    margin-bottom: 2vw;
+    padding-left: 10px;
+    padding-right: 15px;
+    background-color: rgb(233, 92, 92);
+    border-radius: 3px;
+    box-shadow: 0px -3px 3px rgb(204, 1, 1) inset,
+    0px 3px 3px rgb(204, 1, 1) inset;
     
+}
 
-    header figure {
-        max-width: 110px;
-        max-height: 110px;
-        left: 20px;
-        
-    }
+#contenedor-enlaces a:link {
+    color: black;
+}
 
-
-    #menu {
-        display: inline-block;
-    }
-
-    #menu img {
-        display: none;
-    }
-
-    #contenedor-enlaces {
-        padding-top: 50px;
-        max-width: 275px;
-        min-width: 275px;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;   
-        border-right: 3.5px solid red;
-        background-color: rgb(255, 255, 255);
-        transition: 0.5s;
-    }
-
-    #contenedor-enlaces:hover {
-        min-width: 290px;
-        transition: 0.5s;
-    }
+#contenedor-enlaces a:visited {
+    color: black;
+}
 
 
-    #contenedor-enlaces li {
-        height: 60px;
-        line-height: 60px;
-        list-style: none;
-        text-decoration: none;
-        font-size: 28px;  
-        font-family: 'Inconsolata', monospace;
-        font-weight: 600;
-        margin-bottom: 50px;
-        padding-left: 10px;
-        padding-right: 15px;
-        background-color: rgb(233, 92, 92);
-        border-radius: 3px;
-        box-shadow: 0px -3px 3px rgb(204, 1, 1) inset,
-        0px 3px 3px rgb(204, 1, 1) inset;
-        
-    }
+#contenedor-enlaces li:hover {
+    background-color: rgb(232, 68, 68);
+}
 
-    #contenedor-enlaces a:link {
-        color: black;
-    }
-
-    #contenedor-enlaces a:visited {
-        color: black;
-    }
-
-  
-    #contenedor-enlaces li:hover {
-        background-color: rgb(232, 68, 68);
-    }
-
-    #contenedor-enlaces .inicio a:hover  {
-        font-size: 32px;
-        transition: 0.8s;
-        padding-left: 140px;
-        
-    }
-    #contenedor-enlaces .cuentas a:hover  {
-        font-size: 32px;
-        transition: 0.8s;
-        padding-left: 125px;
-        
-    }
-    #contenedor-enlaces .transf a:hover  {
-        font-size: 30px;
-        transition: 0.8s;
-        padding-left: 45px;
-        
-    }
-    #contenedor-enlaces .pagos a:hover  {
-        font-size: 32px;
-        transition: 0.8s;
-        padding-left: 157px;
-        
-    }
-    #contenedor-enlaces .prestamos a:hover  {
-        font-size: 32px;
-        transition: 0.8s;
-        padding-left: 93px;
-        
-    }
-
-    #abrir,
-    #cerrar {
-        display: none;
-    }
-
-    main {
-        background: rgb(254, 156, 156);
-    }
+#contenedor-enlaces .inicio a:hover  {
+    font-size: 32px;
+    transition: 0.8s;
+    padding-left: 140px;
     
-    #cont {
-        float: right;
-        margin: 0px 200px 0px 0px;
-    }
+}
+#contenedor-enlaces .cuentas a:hover  {
+    font-size: 32px;
+    transition: 0.8s;
+    padding-left: 125px;
     
-    #montoActual {
-        margin: 30px 0px 0px 15px;
-    }
+}
+#contenedor-enlaces .transf a:hover  {
+    font-size: 30px;
+    transition: 0.8s;
+    padding-left: 45px;
     
-    #montoActual p {
-        margin-bottom: 15px;
-    }
+}
+#contenedor-enlaces .pagos a:hover  {
+    font-size: 32px;
+    transition: 0.8s;
+    padding-left: 157px;
     
-    .container {
-        margin-bottom: 20px;
-        height: 40px;
-        width: 200px;
-        border: 1px solid rgb(66, 71, 81);
-        border-radius: 10px;
-        background: white;
-        text-align: center;
-        line-height: 40px;
-        box-shadow: inset 0px 0px 5px rgb(0, 0, 0);
-    }
+}
+#contenedor-enlaces .prestamos a:hover  {
+    font-size: 32px;
+    transition: 0.8s;
+    padding-left: 93px;
     
-    .info {
-        margin-bottom: 15px;
-        height: 150px;
-        width: 900px;
-        border: 2px solid black;
-        background: rgb(255, 255, 255);
-    }
-    
-    h2 {
-        font-size: 18px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: rgb(97, 97, 97);
-    }
+}
+
+#abrir,
+#cerrar {
+    display: none;
+}
+
+main {
+    background: rgb(254, 156, 156);
+}
+
+#cont {
+    float: right;
+    margin: 0vw 10vw 0vw 0vw;
+}
+
+#montoActual {
+    margin: 30px 0px 0px 15px;
+}
+
+#montoActual p {
+    font-size: 2vw;
+    margin-bottom: 15px;
+}
+
+.container {
+    margin-bottom: 20px;
+    height: 4vw;
+    width: 20vw;
+    border: 1px solid rgb(66, 71, 81);
+    border-radius: 10px;
+    background: white;
+    text-align: center;
+    line-height: 4vw;
+    box-shadow: inset 0px 0px 5px rgb(0, 0, 0);
+}
+
+.info {
+    margin-bottom: 15px;
+    height: 150px;
+    width: 60vw;
+    border: 2px solid black;
+    background: rgb(255, 255, 255);
+}
+
+h2 {
+    font-size: 2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(97, 97, 97);
+}
