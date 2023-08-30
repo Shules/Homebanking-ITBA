@@ -129,13 +129,50 @@
         
     }
 
-    
-
-  
-
-
-
     #abrir,
     #cerrar {
         display: none;
+    }
+
+    main {
+        background: rgb(254, 156, 156);
+    }
+    
+    #cont {
+        float: right;
+        margin: 0px 200px 0px 0px;
+    }
+    
+    #montoActual {
+        margin: 30px 0px 0px 15px;
+    }
+    
+    #montoActual p {
+        margin-bottom: 15px;
+    }
+    
+    .container {
+        margin-bottom: 20px;
+        height: 40px;
+        width: 200px;
+        border: 1px solid rgb(66, 71, 81);
+        border-radius: 10px;
+        background: white;
+        text-align: center;
+        line-height: 40px;
+        box-shadow: inset 0px 0px 5px rgb(0, 0, 0);
+    }
+    
+    .info {
+        margin-bottom: 15px;
+        height: 150px;
+        width: 900px;
+        border: 2px solid black;
+        background: rgb(255, 255, 255);
+    }
+    
+    h2 {
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(97, 97, 97);
     }
