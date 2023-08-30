@@ -124,6 +124,17 @@
         font-size: 1.2em;
     }
 
+    .divManejaTuCuenta{
+        min-height: 50%;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(227, 230, 233);
+        box-shadow: 0 16px 20px -18px #6e6e6e;
+        border-radius: 1rem;
+
+    }
+
     #nave ul {
         display: flex;
         flex-direction: column;
@@ -138,8 +149,6 @@
         display: block;
         margin-bottom: 1em;
         padding: 1em;
-        border-top: solid red;
-        border-bottom: solid red;
         text-align: center;
 
     }
@@ -148,9 +157,6 @@
         text-decoration: none;
         color: black;
         font-size: 1.2em;
-
-
-
 
     }
 
@@ -204,9 +210,23 @@
 
     /*FIN MAIN*/
 
+    /* MANEJA TU CUENTA EN INDEX */
+
+    .botonManejaCuenta{
+        background-color: rgb(227, 230, 233);
+        box-shadow: 0 16px 20px -18px #6e6e6e;
+        border-radius: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .botonManejaCuenta:hover{
+        background-color: rgb(204, 209, 209);
+    }
+
     /* FORMULARIO */
     .formSolicitarTarjeta{
-        background-color: aliceblue;
+        background-color: rgb(227, 230, 233);
         box-shadow: 0 16px 20px -18px #6e6e6e;
         border-radius: 1rem;
     }
@@ -217,6 +237,7 @@
     footer {
         display: flex;
         flex-direction: row;
+        background-color: #dedfe0;
     }
 
     #cond {
