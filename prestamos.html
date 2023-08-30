@@ -30,9 +30,10 @@
                     <li class="prestamos"><a href="#">PRESTAMOS</a></li>
                 </ul>
             </nav>
-        </section>    
-            <div class="prestamo-menu">
-                <h1>Nuevo préstamo</h1>
+        </section>
+            <h2 id="tituloPrestamo">Nuevo préstamo</h2>
+            
+            <div class="prestamo-menu">    
                 <label for="prestamo"> Seleccioná tu nuevo Préstamo</label>
                     <br>
                     <h2>Personal<input id="Personal" type="radio" name="prestamo" value="Personal"></h2>
@@ -41,13 +42,47 @@
                     <br>
                     <h2>Capital de trabajo<input id="Capital" type="radio" name="prestamo" value="Capital"></h2>
                 <br><br>
-                <h2><button id="cancelar" type="button" onclick="cancelacion()">Cancelar</button>
+                
+                <h3><button id="cancelar" type="button" onclick="cancelacion()">Cancelar</button>
                     <button id="confirmar" type="button" onclick="mostrarAviso()">Continuar</button>
-                </h2>
+                </h3>
                 <p id="confirmacion"></p>
             </div>
     </main>
     <footer>
+        <section id="cond">
+            <ul>
+                <li><a href="">Terminos y condiciones</a></li>
+                <li><a href="">Privacidad</a></li>
+                <li>© 2023, Maze Bank, S.A.</li>
+            </ul>
+
+
+        </section>
+        <section id="logo">
+            <figure>
+                <img src="img/logo_banco.png" alt="Imagen del logo del banco">
+            </figure>
+            <h1>Maze Bank</h1>
+
+
+        </section>
+        <section id="redes">
+            <h4>Contactanos</h4>
+            <ul>
+                <li><a href="tel:+54936854423"><img src="img/png-clipart-phone-phone.png" alt="logo telefono"></a></li>
+                <li><a href="https://www.facebook.com/"><img src="img/Facebook_f_logo_(2019).svg.webp"
+                            alt="logo facebook"></a></li>
+                <li><a href="https://twitter.com/"><img src="img/Logo_of_Twitter.svg.png" alt="logo twitter"></a></li>
+                <li><a href="mailto:mazebank@gmail.com"><img
+                            src="img/png-transparent-computer-icons-email-electronic-mailing-list-email-miscellaneous-logo-black-and-white.png"
+                            alt="logo gmail"></a></li>
+
+
+            </ul>
+
+
+        </section>
         <script src="src/prestamos.js"></script>
     </footer>
 </body>
