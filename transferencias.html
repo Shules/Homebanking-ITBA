@@ -18,7 +18,7 @@
         <h1>Maze Bank</h1>
     </header>
     <main>
-        <section id="menu">
+        <!--section id="menu">
             <a href="#menu"><img src="img/burger_menu.png" alt="Logo abrir menu" id="abrir"></a>
             <a href="#"><img src="img/cerrar_menu.png" alt="Logo cerrar menu" id="cerrar"></a>
         <nav id="contenedor-enlaces">
@@ -30,11 +30,46 @@
                 <li class="prestamos"><a href="prestamos.html">PRESTAMOS</a></li>
             </ul>
         </nav>
-        </section>
+        </section-->
+        <section id="cuerpo">
+            <aside>
+                <section id="menu">
+                    <a href="#menu"><img src="img/burger_menu.png" alt="Logo abrir menu" id="abrir"></a>
+                    <a href="#"><img src="img/cerrar_menu.png" alt="Logo cerrar menu" id="cerrar"></a>
+                    <nav id="contenedor-enlaces">
+                        <ul>
+                            <li class="inicio"><a href="#">INICIO</a></li>
+                            <li class="cuentas"><a href="cuentas.html">CUENTAS</a></li>
+                            <li class="transf"><a href="transferencias.html">TRANSFERENCIAS</a></li>
+                            <li class="pagos"><a href="pagos.html">PAGOS</a></li>
+                            <li class="prestamos"><a href="prestamos.html">PRESTAMOS</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </aside>  
+        </section>  
         <br>
         <br>
         <form class="menu-transacciones">
-            <h2>Transferencias</h2>
+            <div id="titulo">
+                <h2>Transferencias</h2>
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex at obcaecati nihil unde ratione maxime delectus laudantium necessitatibus, magni veniam? Ipsum nostrum iste culpa magnam nihil nemo magni blanditiis facilis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laborum quam sapiente autem itaque? Odit est, cum velit at, optio quis dolore id libero vitae quae, nulla nemo neque tempore?
+            </div>
+            <br>
+            <div id="remitente">
+                <ul class="prueba" >
+                    <li>De BN $ 255-65418/8</li>
+                    <br>
+                    <li>Fecha de Ejecución 24/8/2023</li>
+                    <br>
+                    <li>Plazo de Acreditación En el acto</li>
+                    <br>
+                    <li>Su saldo actual es de: $<a id="saldoActual">5000</a></li>
+                </ul>
+            </div>
+            <br>
             <div class="importes">
                 <label class="prueba"> Importe en </label>
                     <select name="" id="Importe" class="prueba2">
@@ -58,18 +93,7 @@
             </div>
             <br>
             <br>
-            <div id="remitente">
-                <ul class="prueba" >
-                    <li>De BN $ 255-65418/8</li>
-                    <br>
-                    <li>Fecha de Ejecución 24/8/2023</li>
-                    <br>
-                    <li>Plazo de Acreditación En el acto</li>
-                    <br>
-                    <li>Su saldo actual es de: $<a id="saldoActual">5000</a></li>
-                </ul>
-            </div>
-            <br>
+            
             <div id="metodo">
                 <label class="prueba">Concepto</label>
                     <select name="" class="prueba2">
@@ -91,6 +115,7 @@
         </form>
     </main>
     <footer>
+        <!--div class="estilo"-->
             <section id="cond">
                 <ul>
                     <li><a href="">Terminos y condiciones</a></li>
@@ -98,12 +123,14 @@
                     <li>© 2023, Maze Bank, S.A.</li>
                 </ul>
     
+    
             </section>
             <section id="logo">
                 <figure>
                     <img src="img/logo_banco.png" alt="Imagen del logo del banco">
                 </figure>
                 <h1>Maze Bank</h1>
+    
     
             </section>
             <section id="redes">
@@ -116,8 +143,13 @@
                     <li><a href="mailto:mazebank@gmail.com"><img
                                 src="img/png-transparent-computer-icons-email-electronic-mailing-list-email-miscellaneous-logo-black-and-white.png"
                                 alt="logo gmail"></a></li>
+    
+    
                 </ul>
+    
+    
             </section>
+        <!--/div-->
         <script src="src/transferencias.js"></script>
     </footer>
 </body>

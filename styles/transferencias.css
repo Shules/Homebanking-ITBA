@@ -7,40 +7,27 @@
 	outline: none;
 }
 
+form{
+    margin-right: 10%;
+}
+
+#titulo {
+    margin-right: -20%;
+    margin-left: -5%;
+    background-color:rgb(239, 110, 110);
+    font-family: Arial, Helvetica, sans-serif
+}
+
 h2 {
     text-align: center;
     display: block;
-    font-size: 45px;
+    font-size: 50px;
     margin-left: 6px;
     margin-top: 27px;
     padding-top: 5px;
     padding-bottom: 25px;
+    color:beige;
 }
-.prueba {
-        display: block;
-        text-align: center;
-        font-size: 20px
-
-    }
-
-.prueba2 {
-    text-align: left;
-    padding: 0px 8px;
-    background-color: white;
-    border-radius: 7px;
-    border: 2px solid red;
-    max-height: 20px;
-    min-height: 20px;
-    width:400px;
-    line-height: 25px;
-    /**box-shadow: 2px 1.5px 2px grey,
-    -2px -0.5px 2px grey;**/
-    font-size: 15px;
-    /**text-shadow: 0px 2px 5px grey;**/
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-
 
 #continuar{
     /*box-shadow: 10px 10px 5px 0px rgba(199,174,174,0.75);*/
@@ -88,16 +75,7 @@ h2 {
     }
 
 
-    #menu {
-        float: left;
-        display: inline-block;
-    }
-
-    #menu img {
-        display: none;
-    }
-
-    #contenedor-enlaces {
+    /*#contenedor-enlaces {
         padding-top: 50px;
         max-width: 275px;
         min-width: 275px;
@@ -175,53 +153,121 @@ h2 {
         transition: 0.8s;
         padding-left: 93px;
         
+    }*/
+
+    /*Menú*/
+    
+    #menu {
+        float: left;
+        display: inline-block;
     }
+
+    #menu img {
+        display: none;
+    }
+    #menu img {
+        width: 4vw;
+    }
+
+
+    #menu #cerrar {
+        display: none;
+    }
+
+
+    #menu #contenedor-enlaces {
+        height: 0%;
+        /*altura cambia a cero*/
+        transition: height 1s ease;
+        /*Efecto de transisición*/
+        overflow: hidden;
+        /*oculta lo que sobre salga*/
+    }
+
+
+    #contenedor-enlaces a {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.25em;
+        margin-top: 0.25em;
+        text-decoration: none;
+        background-color: grey;
+        padding: 1em;
+        /*genera espacio a la vuelta, lo hace mas "tocable"*/
+        color: black;
+        font-size: 1.2rem;
+    }
+
+
+    #menu:target #abrir {
+        display: none;
+        /*oculta la imagen de hamburguesa*/
+    }
+
+
+    #menu:target #cerrar {
+        display: block;
+        /*muestra la imagen de x*/
+    }
+
+
+    #menu:target #contenedor-enlaces {
+        height: 40vh;
+        transition: height 1.5s ease;
+    }
+
+    /*Menú*/
 
     .menu-transacciones
     {
-        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
         display: flex;
         flex-direction: column;
         vertical-align: middle;
         margin-top: -36px;
         /*padding-top: 100px;*/
-        padding-bottom: 25%;
+        padding-bottom: 1%;
         background-color: rgb(255, 255, 255);
-        background-image: url(/img/background_login.jpg);
-        padding-bottom: 52px;
     }
 
-    .importes
+    #montoIngresar, #receptor, #remitente, #metodo, .importes
     {
-        background-color: lightcoral;
+        background-color: rgba(241, 7, 7, 0.388);
         display: block;
+        font-family: Arial, Helvetica, sans-serif;
         border-radius: 5px;
-        padding: 10px 20px 10px 20px;
-        margin: 10px;
-
+        padding: 0%;
+        margin: 2%;
+        text-align: center;
+        font-size: 20px
+        
     }
 
-    select
+    /*select
     {
         margin-left: 5px;
         border-radius: 5px;
         text-align: center;
         border: 3px solid lightcoral;
         background-color: lightblue;
-    }
+    }*/
 
-    input
+    input, select
     {
-        margin-left: 5px;
-        border-radius: 5px;
+        display: block;
+        margin: auto;
         text-align: center;
         border: 3px solid lightcoral;
-        background-color: lightblue;
+        text-align: center;
+        padding: 0px 0px;
+        background-color: white;
+        border-radius: 2%;
     }
 
     
 
-    #montoIngresar
+    /*#montoIngresar
     {
         background-color: lightcoral;
         display:block;
@@ -256,11 +302,12 @@ h2 {
         border-radius: 5px;
         padding: 10px 15px 10px 15px;
         margin: 10px;
-    }
+    }*/
 
     #botonContinuar
     {
         align-items: center;
+        margin: auto;
     }
 
     #continuar
@@ -272,36 +319,100 @@ h2 {
         background-color: lightcoral;
         display:block;
         border-radius: 5%;
-        padding: 10px 10px 10px 10px;
+        padding: 10px;
         margin: 10px;
-        
+        cursor: pointer;
+    }
+    #continuar:hover{
+        background-color: rgb(239, 110, 110);
     }
 
     footer {
-        margin: 200px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        border-top: red solid;
+        padding-bottom: 10px;
+    }
+    #cond {
+        width: 33%;
+        display: flex;
+        justify-content: start;
     }
 
-    .piepagina {
-        padding: 100%;
+    #cond ul {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+
     }
-    
-    #cond{
-        /*display: inline-block;*/
-        background-color: aquamarine;
+
+    #cond ul li {
+        list-style: none;
+        margin: 3px;
+    }
+
+    #cond ul li a {
+        text-decoration: none;
+        color: black;
     }
 
     #logo {
-        /*display: inline-block;*/
-        background-color:cadetblue ;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 33%;
     }
 
-    #redes{
-        /*display: inline-block;*/
-        background-color:crimson;
+    #logo img {
+        width: 100%;
+
     }
+
+    #logo figure {
+        width: 60px;
+
+    }
+
+    #logo h1 {
+        font-size: 30px;
+    }
+
+    #redes {
+        display: flexbox;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        width: 33%;
+
+    }
+
+    #redes ul {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    #redes ul li {
+        margin: 1em;
+        list-style: none;
+    }
+
+    #redes ul li img {
+        width: 3vh;
+
+    }
+
+    #redes h4 {
+        font-size: 25px;
+    }
+
 
     @media screen and (max-device-width:850px) and (max-device-height:1280px) {
-        #menu
+
+        /*#menu
         {
             display: none;
             width: 25px;
@@ -309,17 +420,102 @@ h2 {
         }
         .menu-transacciones
         {
-            display: inline-block;
+            display: flexbox;
+            margin: auto;
             margin-top: 0%;
         }
 
         #cerrar
         {
             display: inline-block;
+        }*/
+
+        footer {
+            display: flexbox;
+            font-size:small;
         }
+
+        #logo img {
+            width: 90%;
+    
+        }
+    
+        #logo figure {
+            width: 50px;
+    
+        }
+    
+        #logo h1 {
+            font-size: 20px;
+        }
+
+        #redes ul {
+            display: block;
+            width: auto;
+            
+        }
+
+        input, select
+        {
+            display: block;
+            margin: auto;
+            border-radius: 5px;
+            text-align: center;
+            padding: 0px 0px;
+            border-radius: 7px;
+        }
+        
+        /*Menú*/
+        #menu img {
+            width: 10vw;
+        }
+    
+        #menu #cerrar {
+            display: none;
+        }
+    
+        #menu #contenedor-enlaces {
+            height: 0;
+            /*altura cambia a cero*/
+            transition: height 1s ease;
+            /*Efecto de transisición*/
+            overflow: hidden;
+            /*oculta lo que sobre salga*/
+        }
+    
+        #contenedor-enlaces a {
+            display: block;
+            width: 100%;
+            margin-bottom: 0.25em;
+            margin-top: 0.25em;
+            text-decoration: none;
+            background-color: grey;
+            padding: 1em;
+            /*genera espacio a la vuelta, lo hace mas "tocable"*/
+            color: black;
+            font-size: 1.2rem;
+        }
+    
+        #menu:target #abrir {
+            display: none;
+            /*oculta la imagen de hamburguesa*/
+        }
+    
+        #menu:target #cerrar {
+            display: block;
+            /*muestra la imagen de x*/
+        }
+    
+        #menu:target #contenedor-enlaces {
+            height: 40vh;
+            transition: height 1.5s ease;
+        }
+    
+
+
     }
 
-    #abrir,
+    /*#abrir,
     #cerrar {
         display: none;
-    }
+    }*/
