@@ -1,92 +1,144 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/cuentas.css">
+    <link rel="stylesheet" href="styles/cuentas.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
-    <title>Cuentas</title>
+    <title>Maze Bank</title>
 </head>
+
 <body>
-    
     <header>
         <figure>
             <img src="img/logo_banco.png" alt="Imagen del logo del banco">
         </figure>
         <h1>Maze Bank</h1>
+        <button id="cerrar-sesion">Cerrar sesión</button>
     </header>
+
+
     <main>
-        <section id="menu">
-            <a href="#menu"><img src="img/burger_menu.png" alt="Logo abrir menu" id="abrir"></a>
-            <a href="#"><img src="img/cerrar_menu.png" alt="Logo cerrar menu" id="cerrar"></a>
-        <nav id="contenedor-enlaces">
-            <ul>
-                <li class="inicio"><a href="index.html">INICIO</a></li>
-                <li class="cuentas"><a href="#">CUENTAS</a></li>
-                <li class="transf"><a href="transferencias.html">TRANSFERENCIAS</a></li>
-                <li class="pagos"><a href="pagos.html">PAGOS</a></li>
-                <li class="prestamos"><a href="prestamos.html">PRESTAMOS</a></li>
-            </ul>
-        </nav>
+        <aside>
+            <section id="menu">
+                <a href="#menu"><img src="img/burger_menu.png" alt="Logo abrir menu" id="abrir"></a>
+                <a href="#"><img src="img/cerrar_menu.png" alt="Logo cerrar menu" id="cerrar"></a>
+                <nav id="contenedor-enlaces">
+                    <ul>
+                        <li class="inicio"><a href="index.html">INICIO</a></li>
+                        <li class="cuentas"><a href="#">CUENTAS</a></li>
+                        <li class="transf"><a href="transferencias.html">TRANSFERENCIAS</a></li>
+                        <li class="pagos"><a href="pagos.html">PAGOS</a></li>
+                        <li class="prestamos"><a href="prestamos.html">PRESTAMOS</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </aside>
+
+
+        <section id="cuentas-container">
+            <div class="cuenta-1">
+                <h1>BN $ 123456/5464/0</h1>
+
+                <p>$0</p>
+                <p>Limite de extracción $100.000</p>
+
+                <button onclick="">Ver Alias/CBU/CVU</button>
+
+                <br>
+                <button class="movimientos">Ver movimientos</button>
+                <select name="" id="">
+                    <option id='op1'value="">Del día</option>
+                    <option value="">Últimos 3 dias</option>
+                    <option value="">Últimos 7 dias</option>
+                    <option value="">Último mes</option>
+                </select>
+                </label>
+            </div>
+            
+        
+            <div class="cuenta-2">
+                <h1>BN $ 123456/5464/0</h1>
+
+                <p>$0</p>
+                <p>Limite de extracción $100.000</p>
+
+                <button onClick="">Ver Alias/CBU/CVU</button>
+
+                <br>
+                <button class="movimientos">Ver movimientos</button>
+                <select name="" id="">
+                    <option value="">Del día</option>
+                    <option value="">Últimos 3 dias</option>
+                    <option value="">Últimos 7 dias</option>
+                    <option value="">Último mes</option>
+                </select>
+                </label>
+            </div>
+            
+            
+            <div class="cuenta-usd">
+                <h1>BN $ 123456/5464/0</h1>
+
+                <p>$USD 0</p>
+                <p>Limite de extracción USD$200</p>
+
+                <button onclick="">Ver Alias/CBU/CVU</button>
+
+                <br>
+                <button class="movimientos">Ver movimientos</button>
+                <select name="" id="">
+                    <option value="">Del día</option>
+                    <option value="">Últimos 3 dias</option>
+                    <option value="">Últimos 7 dias</option>
+                    <option value="">Último mes</option>
+                </select>
+                </label>
+            </div>
         </section>
-        <div>
-            <strong>BN $ 123456/5464/0 (Cuenta)</strong>
-            <br>  
-            $60.000
-            <p>Limite de extracción $100.000</p>
-            <label for="">CBU 51486846548473
-                <button>Copiar</button>
-            </label>
-            <br><br>
-            <label for=""> Movimientos
-                <select name="" id="">
-                    <option value="">Del día</option>
-                    <option value="">ultimos 3 dias</option>
-                    <option value="">ultimos 7 dias</option>
-                    <option value="">ultimo mes</option>
-                </select>
-            </label>
-            <hr>
-            <br>
-            <strong>BN $ 123456/5464/0 (Cuenta)</strong>     
-            <br>
-            $152.000
-            <p>Limite de extracción $100.000</p>
-            <label for="">CBU 51486846548473
-                <button>copiar</button>
-            </label>
-            <br><br>
-            <label for=""> Movimientos
-                <select name="" id="">
-                    <option value="">Del día</option>
-                    <option value="">ultimos 3 dias</option>
-                    <option value="">ultimos 7 dias</option>
-                    <option value="">ultimo mes</option>
-                </select>
-            </label>
-            <hr>
-            <br>
-            <strong>BN $ 123456/5464/0 (Cuenta)</strong>     
-            <br>
-            $80.000
-            <p>Limite de extracción $100.000</p>
-            <label for="">CBU 51486846548473
-                <button>copiar</button>
-            </label>
-            <br><br>
-            <label for=""> Movimientos
-                <select name="" id="">
-                    <option value="">Del día</option>
-                    <option value="">ultimos 3 dias</option>
-                    <option value="">ultimos 7 dias</option>
-                    <option value="">ultimo mes</option>
-                </select>
-            </label>
-        </div>
     </main>
+
     <footer>
-        <script src="src/transferencias.js"></script>
+        <section id="cond">
+            <ul>
+                <li><a href="">Terminos y condiciones</a></li>
+                <li><a href="">Privacidad</a></li>
+                <li>© 2023, Maze Bank, S.A.</li>
+            </ul>
+
+        </section>
+        <section id="logo">
+            <figure>
+                <img src="img/logo_banco.png" alt="Imagen del logo del banco">
+            </figure>
+            <h1>Maze Bank</h1>
+
+        </section>
+        <section id="redes">
+            <h4>Contactanos</h4>
+            <ul>
+                <li><a href="tel:+54936854423"><img src="img/png-clipart-phone-phone.png" alt="logo telefono"></a></li>
+                <li><a href="https://www.facebook.com/"><img src="img/Facebook_f_logo_(2019).svg.webp"
+                            alt="logo facebook"></a></li>
+                <li><a href="https://twitter.com/"><img src="img/Logo_of_Twitter.svg.png" alt="logo twitter"></a></li>
+                <li><a href="mailto:mazebank@gmail.com"><img
+                            src="img/png-transparent-computer-icons-email-electronic-mailing-list-email-miscellaneous-logo-black-and-white.png"
+                            alt="logo gmail"></a></li>
+
+            </ul>
+
+        </section>
+
     </footer>
+
+   
 </body>
 </html>
