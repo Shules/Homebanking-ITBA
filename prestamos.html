@@ -31,23 +31,31 @@
                 </ul>
             </nav>
         </section>
-            <h2 id="tituloPrestamo">Nuevo préstamo</h2>
+
             
-            <div class="prestamo-menu">    
-                <label for="prestamo"> Seleccioná tu nuevo Préstamo</label>
+            <h2 id="tituloPrestamo">Nuevo préstamo</h2>
+            <div id="titulo">
+            <h3>Selecciona tu tipo de préstamo:</h3>
+            
+            <div class="prestamo-menu">  
+                  
+                <label for="prestamo">
                     <br>
                     <h2>Personal<input id="Personal" type="radio" name="prestamo" value="Personal"></h2>
                     <br>
                     <h2>Emprendimiento<input id="Emprendimiento" type="radio" name="prestamo" value="Emprendimiento"></h2>
                     <br>
                     <h2>Capital de trabajo<input id="Capital" type="radio" name="prestamo" value="Capital"></h2>
-                <br><br>
-                
+                </label>
+                    <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores recusandae itaque laboriosam possimus nulla architecto laborum, ut temporibus nemo maxime doloribus animi molestias voluptatum aperiam, id officiis, commodi minus. Aliquid.</p>                    
+                    <br>
                 <h3><button id="cancelar" type="button" onclick="cancelacion()">Cancelar</button>
                     <button id="confirmar" type="button" onclick="mostrarAviso()">Continuar</button>
                 </h3>
                 <p id="confirmacion"></p>
             </div>
+        </div>
     </main>
     <footer>
         <section id="cond">
