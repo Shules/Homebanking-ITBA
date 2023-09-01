@@ -294,10 +294,10 @@ h2 {
         display: none;
     }
 
-    input
+    /*input
     {
         display: none;
-    }
+    }*/
 
     input:checked ~#contenedor-enlaces{
         display: block;
