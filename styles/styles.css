@@ -376,13 +376,12 @@
 
     main h2 {
         text-align: center;
-        font-size: 1.3;
+        font-size: 2em;
         margin-top: 1em;
     }
 
     #info {
         font-size: 1.4em;
-
     }
 
     #info p {
@@ -392,7 +391,6 @@
     #contenido {
         display: flex;
         flex-direction: row;
-
     }
 
     #contenido article figure img {
@@ -412,6 +410,7 @@
 
     #nave {
         position: absolute;
+        width: 100%;
         top: 50px !important;
     }
 
@@ -422,7 +421,6 @@
         list-style: none;
         margin-top: 3em;
         margin-bottom: 3em;
-
     }
 
     #nave ul li {
@@ -436,14 +434,11 @@
         text-decoration: none;
         color: black;
         font-size: 1.2em;
-
-
-
-
     }
 
     .divManejaTuCuenta {
         height: 800px !important;
+        max-width: 700px;
     }
 
     #formulario {
@@ -451,7 +446,7 @@
     }
 
     #formulario form {
-        width: 70%;
+        width: 80%;
         margin-top: 1rem;
         padding: 1em;
         text-align: center;
