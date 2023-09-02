@@ -131,31 +131,50 @@
         padding-left: 93px;
         
     }
-    
+
     .prestamo-menu {
-        color: white;
-        background-color: darkred;
-        padding: 10%;
-        padding-left: 25%;
-        padding-bottom: 25%;
-        display: flex;
+        background-color: white;
+        margin: 3% 30% 5% 30%;
+        display: flexbox;
         flex-direction: column;
+        box-shadow: 10px 8px 8px darkgrey;
+        border: solid #ff1111;
+        padding-top: 1%;
+        padding-bottom: 1%;
     }
 
-     #tituloPrestamo {
+    h2
+    {
+        font-size: larger;
         color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+ 
+    #titulo{
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: 0%;
+        margin-top: 3%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #tituloPrestamo {
+        color: white;
+        background-color: #fc1717e2;
         text-align: center;
         display: block;
         font-size: 50px;
         margin-left: 6px;
-        margin-top: 27px;
-        padding-top: 5px;
-        padding-bottom: 25px;
+        margin-top: 0px;
+        padding: 2%;
+        text-shadow: 1px 2px 5px rgb(166, 17, 12);
+
     }
 
     #Personal
     {
         margin-left: 150px;
+        
     }
 
     #Emprendimiento
@@ -168,29 +187,35 @@
         margin-left: 52px;
     }
 
-    h2
+    p
     {
-        color: white;
+        margin-top: 1%;
+        margin-bottom: 0%;
+        padding-left: 5%;
+        margin-right: 5%;
+        font-size: medium;
     }
 
     button
     {
         color: white;
         width: 175px;
-        height: 25px;
+        height: 30px;
         border-radius: 5px;
-        background-color: blue;
-        margin-top: 50px;
+        background-color: rgb(245, 34, 34);
+        margin-top: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        box-shadow: 4px 3px 6px rgba(0, 0, 0, 0.719);
     }
 
     button:hover{
-        background-color: rgb(114, 110, 239);   
+        background-color: rgb(238, 75, 75);
     }
 
     #confirmacion
     {
         margin-top: 50px;
-        color:white;
+        color:black;
     }
 
     footer {
@@ -299,6 +324,13 @@
             display: block;
             width: auto;
             
+        }
+        .prestamo-menu {
+            background-color: white;
+            margin: 10%;
+            margin-top: 6%;
+            display: flexbox;
+            flex-direction: column;
         }
 
     }

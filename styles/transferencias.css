@@ -14,33 +14,25 @@ form{
 #titulo {
     margin-right: -20%;
     margin-left: -5%;
-    background-color:rgb(239, 110, 110);
-    font-family: Arial, Helvetica, sans-serif
+    background-color: #fc1717e2;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 10%;
 }
 
 h2 {
     text-align: center;
     display: block;
-    font-size: 50px;
-    margin-left: 6px;
-    margin-top: 27px;
-    padding-top: 5px;
+    font-size: 60px;
+    margin-left: 5px;
+    margin-top: 0px;
+    padding-top: 0px;
     padding-bottom: 25px;
-    color:beige;
+    color: white;
+    text-shadow: 1px 2px 5px rgb(166, 17, 12);
 }
 
-#continuar{
-    /*box-shadow: 10px 10px 5px 0px rgba(199,174,174,0.75);*/
-    height: 45px;        
-    border-radius: 5px;
-    padding: 3px 60px;
-    background-color: rgb(245, 34, 34);
-    box-shadow: darkgrey;
-    font-size: 15px;
-    line-height: 18px;
-    font-weight: bold;
-    cursor: pointer;
-}
+
     
     header {
         display: flex;
@@ -73,87 +65,6 @@ h2 {
         left: 20px;
         
     }
-
-
-    /*#contenedor-enlaces {
-        padding-top: 50px;
-        max-width: 275px;
-        min-width: 275px;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;   
-        border-right: 3.5px solid red;
-        background-color: rgb(255, 255, 255);
-        transition: 0.5s;
-    }
-
-    #contenedor-enlaces:hover {
-        min-width: 290px;
-        transition: 0.5s;
-    }
-
-
-    #contenedor-enlaces li {
-        height: 60px;
-        line-height: 60px;
-        list-style: none;
-        text-decoration: none;
-        font-size: 28px;  
-        font-family: 'Inconsolata', monospace;
-        font-weight: 600;
-        margin-bottom: 50px;
-        padding-left: 10px;
-        padding-right: 15px;
-        background-color: rgb(233, 92, 92);
-        border-radius: 3px;
-        box-shadow: 0px -3px 3px rgb(204, 1, 1) inset,
-        0px 3px 3px rgb(204, 1, 1) inset;
-        
-    }
-
-    #contenedor-enlaces a:link {
-        color: black;
-    }
-
-    #contenedor-enlaces a:visited {
-        color: black;
-    }
-
-  
-    #contenedor-enlaces li:hover {
-        background-color: rgb(232, 68, 68);
-    }
-
-    #contenedor-enlaces .inicio a:hover  {
-        font-size: 32px;
-        transition: 0.8s;
-        padding-left: 140px;
-        
-    }
-    #contenedor-enlaces .cuentas a:hover  {
-        font-size: 32px;
-        transition: 0.8s;
-        padding-left: 125px;
-        
-    }
-    #contenedor-enlaces .transf a:hover  {
-        font-size: 30px;
-        transition: 0.8s;
-        padding-left: 45px;
-        
-    }
-    #contenedor-enlaces .pagos a:hover  {
-        font-size: 32px;
-        transition: 0.8s;
-        padding-left: 157px;
-        
-    }
-    #contenedor-enlaces .prestamos a:hover  {
-        font-size: 32px;
-        transition: 0.8s;
-        padding-left: 93px;
-        
-    }*/
 
     /*Menú*/
     
@@ -226,23 +137,30 @@ h2 {
         flex-direction: column;
         vertical-align: middle;
         margin-top: -36px;
-        /*padding-top: 100px;*/
         padding-bottom: 1%;
         background-color: rgb(255, 255, 255);
     }
 
     #montoIngresar, #receptor, #remitente, #metodo, .importes
     {
-        background-color: rgba(241, 7, 7, 0.388);
+        box-shadow: 10px 8px 8px darkgrey;
+        border: solid #ff1111;
+        border-top-style:inset ;
+        border-width: 8px 3px;
+        background-color: white;
         display: block;
         font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 25px;   
+        color: black;
         border-radius: 5px;
         padding: 0%;
         margin: 2%;
-        text-align: center;
-        font-size: 20px
-        
+        margin-right: 15%;
+        margin-left: 15%;
+        box-shadow: 100% black;
     }
+
 
     /*select
     {
@@ -257,74 +175,35 @@ h2 {
     {
         display: block;
         margin: auto;
+        margin-bottom: 1%;
         text-align: center;
-        border: 3px solid lightcoral;
+        border: 3px solid rgb(222, 22, 22);
         text-align: center;
-        padding: 0px 0px;
         background-color: white;
-        border-radius: 2%;
     }
-
-    
-
-    /*#montoIngresar
-    {
-        background-color: lightcoral;
-        display:block;
-        border-radius: 5px;
-        padding: 10px 10px 10px 10px;
-        margin: 10px;
-
-    }
-    
-    #receptor
-    {
-        background-color: lightcoral;
-        display:block;
-        border-radius: 5px;
-        padding: 10px 10px 10px 10px;
-        margin: 10px;
-    }
-
-    #remitente
-    {
-        background-color: lightcoral;
-        display:block;
-        border-radius: 5px;
-        padding: 10px 80px 10px 100px;
-        margin: 10px;
-    }
-
-    #metodo 
-    {
-        background-color: lightcoral;
-        display:block;
-        border-radius: 5px;
-        padding: 10px 15px 10px 15px;
-        margin: 10px;
-    }*/
 
     #botonContinuar
     {
         align-items: center;
         margin: auto;
     }
-
-    #continuar
-    {
-        padding-left: 20%;
-        width: 100%;
-        height: 25%;
-        align-items: center;
-        background-color: lightcoral;
-        display:block;
-        border-radius: 5%;
-        padding: 10px;
-        margin: 10px;
+    #continuar{
+        color: white;
+        box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.719);
+        height: 45px;        
+        border-radius: 5px;
+        padding: 3px 60px;
+        background-color: rgb(245, 34, 34);
+        box-shadow: darkgrey;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 18px;
+        font-weight: bold;
         cursor: pointer;
     }
+    
     #continuar:hover{
-        background-color: rgb(239, 110, 110);
+        background-color: rgb(238, 75, 75);
     }
 
     footer {
@@ -415,10 +294,10 @@ h2 {
         display: none;
     }
 
-    input
+    /*input
     {
         display: none;
-    }
+    }*/
 
     input:checked ~#contenedor-enlaces{
         display: block;
@@ -426,23 +305,11 @@ h2 {
 
     @media screen and (max-device-width:850px) and (max-device-height:1280px) {
 
-        /*#menu
-        {
-            display: none;
-            width: 25px;
-            height: 25px;
-        }
-        .menu-transacciones
-        {
-            display: flexbox;
-            margin: auto;
-            margin-top: 0%;
+        #montoIngresar, #receptor, #remitente, #metodo, .importes{
+            margin-left: 5%;
+            margin-right: 5%;
         }
 
-        #cerrar
-        {
-            display: inline-block;
-        }*/
 
         footer {
             display: flexbox;
@@ -473,10 +340,10 @@ h2 {
         {
             display: block;
             margin: auto;
+            margin-bottom: 2%;
             border-radius: 5px;
             text-align: center;
             padding: 0px 0px;
-            border-radius: 7px;
         }
         
         /*Menú*/
@@ -528,8 +395,3 @@ h2 {
 
 
     }
-
-    /*#abrir,
-    #cerrar {
-        display: none;
-    }*/
