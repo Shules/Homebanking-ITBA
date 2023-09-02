@@ -1,76 +1,54 @@
-*{
-	margin: 0;
-	padding: 0;
-	list-style: none;
-    text-decoration: none;
-	border: none;
-	outline: none;
+/* CSS GENERAL*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-form{
-    margin-right: 10%;
-}
+/* COMIENZO M0VIL*/
+@media all and (max-width:414px) {
+    /*COMIENZO HEADER*/
 
-#titulo {
-    margin-right: -20%;
-    margin-left: -5%;
-    background-color: #fc1717e2;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    padding: 10%;
-}
-
-h2 {
-    text-align: center;
-    display: block;
-    font-size: 60px;
-    margin-left: 5px;
-    margin-top: 0px;
-    padding-top: 0px;
-    padding-bottom: 25px;
-    color: white;
-    text-shadow: 1px 2px 5px rgb(166, 17, 12);
-}
-
-
-    
     header {
         display: flex;
-        max-width: 100%;
-        max-height: 105px;
-        min-height: 105px;
-        align-content: center;
-        border-bottom: 5px solid red;
-        border-radius: 5px;
+        justify-content: center;
+        align-items: center;
     }
-
 
     header img {
-        max-width: 105px;
-        min-width: 105px;
-    }
+        width: 100%;
 
-
-    header h1 {
-        display: block;
-        font-size: 42px;
-        margin-left: 6px;
-        margin-top: 27px;
     }
-    
 
     header figure {
-        max-width: 110px;
-        max-height: 110px;
-        left: 20px;
-        
+        width: 15%;
+
     }
+
+    header h1 {
+        font-size: 42px;
+
+    }
+
+    #cerrar-sesion {   
+        position: absolute;
+        margin: 8em 0 0 60%;
+        padding: 0.5em;
+        background-color: rgb(255, 255, 255);
+        border-radius: 8px;
+    }
+
+    #cerrar-sesion:hover {
+        background-color: red;
+        transition: 0.6s;
+    }
+}
 
     /*Menú*/
     
     #menu {
         float: left;
-        display: inline-block;
+        
     }
 
     #menu img {

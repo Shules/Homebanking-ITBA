@@ -13,3 +13,16 @@ verAliasUSD = () => {
     
     alert('Su Alias es: risa.amarillo.capa\nSu CBU/CVU es: 000054810625489210');
 }
+
+
+movimientos1 = () => {
+    window.location = '/movimientos/movimientos1.html'
+}
+
+movimientos2 = () => {
+    window.location = '/movimientos/movimientos2.html'
+}
+
+movimientosUSD = () => {
+    window.location = 'movimientos/movimientosUSD.html'
+}

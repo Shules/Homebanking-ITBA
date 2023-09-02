@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
@@ -55,39 +56,53 @@
             <section id="info">
                 <p>Somos <strong>Maze Bank</strong> un banco intenacional. Contamos con 128 años antiguedad con clientes
                     de todo el mundo. Te ofrecemos con nuestro <em>Home-Banking</em> una experiencia
-                    distinta a lo tradicional. Nuestra atencion se basa en la interacción virtual del cliente con su dinero
-                    para que puedas manejarlo desde cualquier lado del mundo, sin preocupaciones, con tan solo unos cliks</p>
+                    distinta a lo tradicional. Nuestra atencion se basa en la interacción virtual del cliente con su
+                    dinero
+                    para que puedas manejarlo desde cualquier lado del mundo, sin preocupaciones, con tan solo unos
+                    cliks</p>
                 <p>Lema de <strong>Maze bank</strong>: <em>"Invertí desde tu casa"</em> </p>
 
             </section>
             <div class="divManejaTuCuenta card justify-content-center ">
-            <section id="nave">
-                <h2 class="card-header">Maneja tu cuenta</h2>
-                <ul class="card-body">
-                    <li class="botonManejaCuenta card-title">
-                        <a href="prestamos.html">Solicita Prestamos</a>
-                    </li>
-                    <li class="botonManejaCuenta card-title">
-                        <a href="pagos.html">Ultimos Pagos</a>
-                    </li>
-                    <li class="botonManejaCuenta card-title">
-                        <a href="transferencias.html">Mira tus tranferencias</a>
-                    </li>
+                <section id="nave">
+                    <h2 class="card-header">Maneja tu cuenta</h2>
+                    <ul class="card-body">
+                        <li class="botonManejaCuenta card-title">
+                            <a href="prestamos.html">Solicita Prestamos</a>
+                        </li>
+                        <li class="botonManejaCuenta card-title">
+                            <a href="pagos.html">Ultimos Pagos</a>
+                        </li>
+                        <li class="botonManejaCuenta card-title">
+                            <a href="transferencias.html">Mira tus tranferencias</a>
+                        </li>
 
-                </ul>
+                    </ul>
 
-            </section>
+                </section>
+
+                <section id="formulario">
+                    <form action="" method="post" class="formSolicitarTarjeta">
+                        <legend>Solicita tu tarjeta</legend>
+
+                        <label for="ape">Apellido:
+                            <input type="text" name="ape" id="ape" required></label>
+
+                        <label for="nom">Nombre:
+                            <input type="text" name="nom" id="nom" required></label>
+
+
+                        <button id="sub" type="submit">Solicitar</button>
+                    </form>
+
+                </section>
 
             </div>
 
 
             <section id="contenido">
 
-                <article>
-                    <figure>
-                        <img src="img/maze bank.webp" alt="imagen del maze bank">
-                    </figure>
-                </article>
+                
 
                 <article>
                     <h2>Nuestra Sede</h2>
@@ -109,24 +124,7 @@
                 </article>
 
             </section>
-            <div>
-            <section id="formulario">
-                <form action="" method="post" class="formSolicitarTarjeta">
-                    <legend>Solicita tu tarjeta</legend>
-
-                    <label for="ape">Apellido:
-                        <input type="text" name="ape" id="ape" required></label>
-
-                    <label for="nom">Nombre:
-                        <input type="text" name="nom" required></label>
-
-
-                    <button type="submit">Solicitar</button>
-                </form>
-
-            </section>
-            </div>
-
+            
         </main>
     </section>
     <footer>
@@ -148,13 +146,10 @@
         <section id="redes">
             <h4>Contactanos</h4>
             <ul>
-                <li><a href="tel:+54936854423"><img src="img/png-clipart-phone-phone.png" alt="logo telefono"></a></li>
-                <li><a href="https://www.facebook.com/"><img src="img/Facebook_f_logo_(2019).svg.webp"
-                            alt="logo facebook"></a></li>
-                <li><a href="https://twitter.com/"><img src="img/Logo_of_Twitter.svg.png" alt="logo twitter"></a></li>
-                <li><a href="mailto:mazebank@gmail.com"><img
-                            src="img/png-transparent-computer-icons-email-electronic-mailing-list-email-miscellaneous-logo-black-and-white.png"
-                            alt="logo gmail"></a></li>
+                <li><a href="tel:+54936854423"><img src="img/whatsapp-icon.svg" alt="logo telefono"></a></li>
+                <li><a href="https://www.facebook.com/"><img src="img/facebook.svg" alt="logo facebook"></a></li>
+                <li><a href="https://twitter.com/"><img src="img/twitter.svg" alt="logo twitter"></a></li>
+                <li><a href="mailto:mazebank@gmail.com"><img src="img/google-gmail.svg" alt="logo gmail"></a></li>
 
             </ul>
 
