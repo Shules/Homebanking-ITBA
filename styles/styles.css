@@ -181,6 +181,12 @@
         width: 90% !important;
     }
 
+    #sub {
+        margin: 0px !important;
+        margin-top: 10px !important;
+        padding: 5px !important;
+    }
+
     #formulario form label {
         display: block;
         font-size: 1.5em;
