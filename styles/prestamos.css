@@ -340,3 +340,107 @@
     #cerrar {
         display: none;
     }
+
+    @media all and (min-width:1080px) {
+
+        /*COMIENZO MENU */
+      
+        #menu img {
+          width: 10vw;
+      }
+      
+      #menu #cerrar {
+          display: none;
+      }
+      
+      #menu #contenedor-enlaces {
+          height: 0;
+          /*altura cambia a cero*/
+          transition: height 1s ease;
+          /*Efecto de transisición*/
+          overflow: hidden;
+          /*oculta lo que sobre salga*/
+      }
+      
+      #contenedor-enlaces a {
+          display: block;
+          width: 100%;
+          margin-bottom: 0.25em;
+          margin-top: 0.25em;
+          text-decoration: none;
+          background-color: grey;
+          padding: 1em;
+          /*genera espacio a la vuelta, lo hace mas "tocable"*/
+          color: black;
+          font-size: 1.2rem;
+      }
+      
+      #menu:target #abrir {
+          display: none;
+          /*oculta la imagen de hamburguesa*/
+      }
+      
+      #menu:target #cerrar {
+          display: block;
+          /*muestra la imagen de x*/
+      }
+      
+      #menu:target #contenedor-enlaces {
+          height: 40vh;
+          transition: height 1.5s ease;
+      }
+      
+      /*FIN MENU */
+      }
+      
+      @media all and (min-width:80px) {
+              /*COMIENZO MENU */
+      
+          #menu img {
+              width: 10vw;
+          }
+      
+          #menu #cerrar {
+              display: none;
+          }
+      
+          #menu #contenedor-enlaces {
+              height: 0;
+              /*altura cambia a cero*/
+              transition: height 1s ease;
+              /*Efecto de transisición*/
+              overflow: hidden;
+              /*oculta lo que sobre salga*/
+          }
+      
+          #contenedor-enlaces a {
+              display: block;
+              width: 100%;
+              margin-bottom: 0.25em;
+              margin-top: 0.25em;
+              text-decoration: none;
+              background-color: grey;
+              padding: 1em;
+              /*genera espacio a la vuelta, lo hace mas "tocable"*/
+              color: black;
+              font-size: 1.2rem;
+          }
+      
+          #menu:target #abrir {
+              display: none;
+              /*oculta la imagen de hamburguesa*/
+          }
+      
+          #menu:target #cerrar {
+              display: block;
+              /*muestra la imagen de x*/
+          }
+      
+          #menu:target #contenedor-enlaces {
+              height: 40vh;
+              transition: height 1.5s ease;
+          }
+      
+          /*FIN MENU */
+          
+      }
