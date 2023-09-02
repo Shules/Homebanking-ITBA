@@ -369,8 +369,6 @@
         display: flex;
         flex-direction: column;
         background-color: white;
-        border-left: red solid;
-
     }
 
     main h2 {
@@ -484,60 +482,75 @@
 
     /*FIN MAIN*/
     /*COMIENZO MENU*/
-    #menu img {
-        display: none;
+    #contenedor-enlaces a {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.25em;
+        margin-top: 0.25em;
+        text-decoration: none;
+        background-color: grey;
+        padding: 0.6em;
+        /*genera espacio a la vuelta, lo hace mas "tocable"*/
+        color: black;
+        font-size: 1.9rem;
     }
+
 
     #contenedor-enlaces {
-        width: 30vw;
-        min-height: 60vh;
         display: flex;
         flex-direction: column;
-
-
+        min-width: 330px;
+        min-height: 100vh;
+        border-right: solid red;
+        font-family: 'Inconsolata', monospace;
     }
 
-
+    #contenedor-enlaces ul {
+        padding-left: 0px;
+    }
+    
+    
     #contenedor-enlaces li {
-        font-size: 28px;
+        min-width: 100%;
         margin-top: 1%;
-
+        list-style: none;
     }
 
     #contenedor-enlaces .transf a:hover {
-        font-size: 30px;
+        font-size: 2.4rem;
         transition: 0.8s;
-        padding-left: 20px;
+        
     }
 
     #contenedor-enlaces .inicio a:hover {
-        font-size: 32px;
+        font-size: 2.6rem;
         transition: 0.8s;
-        padding-left: 100px;
+        
     }
 
     #contenedor-enlaces .cuentas a:hover {
-        font-size: 32px;
+        font-size: 2.6rem;
         transition: 0.8s;
-        padding-left: 80px;
+        
     }
 
     #contenedor-enlaces .pagos a:hover {
-        font-size: 32px;
+        font-size: 2.6rem;
         transition: 0.8s;
-        padding-left: 100px;
+        
     }
 
     #contenedor-enlaces .prestamos a:hover {
-        font-size: 32px;
+        font-size: 2.6rem;
         transition: 0.8s;
-        padding-left: 60px;
+        
     }
 
     #abrir,
     #cerrar {
         display: none;
     }
+
 
     /*FIN MENU */
     /*COMIENZO FOOTER*/

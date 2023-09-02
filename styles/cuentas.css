@@ -6,7 +6,7 @@
 }
 
 /* COMIENZO M0VIL*/
-@media all and (max-width:414px) {
+@media all and (min-width:414px) {
     /*COMIENZO HEADER*/
 
     header {
@@ -470,8 +470,8 @@
     #contenedor-enlaces {
         display: flex;
         flex-direction: column;
-        min-width: 250px;
-        max-width: 31vw;
+        min-width: 330px;
+        max-width: 330px;
         min-height: 100vh;
         border-right: solid red;
         font-family: 'Inconsolata', monospace;
@@ -491,31 +491,31 @@
     #contenedor-enlaces .transf a:hover {
         font-size: 2.4rem;
         transition: 0.8s;
-        padding-left: 20px;
+        
     }
 
     #contenedor-enlaces .inicio a:hover {
         font-size: 2.6rem;
         transition: 0.8s;
-        padding-left: 100px;
+        
     }
 
     #contenedor-enlaces .cuentas a:hover {
         font-size: 2.6rem;
         transition: 0.8s;
-        padding-left: 80px;
+        
     }
 
     #contenedor-enlaces .pagos a:hover {
         font-size: 2.6rem;
         transition: 0.8s;
-        padding-left: 100px;
+        
     }
 
     #contenedor-enlaces .prestamos a:hover {
         font-size: 2.6rem;
         transition: 0.8s;
-        padding-left: 60px;
+       
     }
 
     #abrir,
