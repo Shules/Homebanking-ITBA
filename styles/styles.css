@@ -161,13 +161,11 @@
     }
 
     #formulario {
+        margin-bottom: 50px;
         display: flex;
-        flex-direction: row;
         justify-content: center;
-        margin-bottom: 3em;
-
-
-
+        align-items: center;
+        width: 100%;
     }
 
     #formulario form {
@@ -175,9 +173,12 @@
         margin-top: 1rem;
         padding: 1em;
         text-align: center;
-        border-top: black solid;
-        border-bottom: black solid;
+        border: 2px black solid;
+    }
 
+    #ape,
+    #nom {
+        width: 90% !important;
     }
 
     #formulario form label {
@@ -226,6 +227,7 @@
 
     /* FORMULARIO */
     .formSolicitarTarjeta{
+        width: 70% !important;
         background-color: rgb(227, 230, 233);
         box-shadow: 0 16px 20px -18px #6e6e6e;
         border-radius: 1rem;
