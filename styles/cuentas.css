@@ -311,7 +311,7 @@
         padding: 0.5em;
         background-color: rgb(255, 255, 255);
         border-radius: 8px;
-
+        font-family: 'Rubik', sans-serif;
     }
     #cerrar-sesion:hover {
         background-color: red;
