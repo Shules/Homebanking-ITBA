@@ -69,25 +69,6 @@
         transition: 0.5s;
     }
 
-
-    #contenedor-enlaces li {
-        height: 60px;
-        line-height: 60px;
-        list-style: none;
-        text-decoration: none;
-        font-size: 28px;  
-        font-family: 'Inconsolata', monospace;
-        font-weight: 600;
-        margin-bottom: 50px;
-        padding-left: 10px;
-        padding-right: 15px;
-        background-color: rgb(233, 92, 92);
-        border-radius: 3px;
-        box-shadow: 0px -3px 3px rgb(204, 1, 1) inset,
-        0px 3px 3px rgb(204, 1, 1) inset;
-        
-    }
-
     #contenedor-enlaces a:link {
         color: black;
     }
