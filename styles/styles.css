@@ -332,10 +332,6 @@
         flex-direction: row;
     }
 
-    aside {
-        width: 20%;
-    }
-
     /*COMIENZO HEADER*/
 
     header {
@@ -483,6 +479,11 @@
 
     /*FIN MAIN*/
     /*COMIENZO MENU*/
+
+    
+    aside {
+        display: flex;
+    }
     #contenedor-enlaces a {
         display: block;
         width: 100%;
@@ -500,7 +501,6 @@
     #contenedor-enlaces {
         display: flex;
         flex-direction: column;
-        min-width: 330px;
         min-height: 100vh;
         
         font-family: 'Inconsolata', monospace;
@@ -515,37 +515,13 @@
         min-width: 100%;
         margin-top: 1%;
         list-style: none;
+        display: flex;
     }
 
-    #contenedor-enlaces .transf a:hover {
-        font-size: 2.4rem;
+    #contenedor-enlaces a{
         transition: 0.8s;
-        
     }
 
-    #contenedor-enlaces .inicio a:hover {
-        font-size: 2.6rem;
-        transition: 0.8s;
-        
-    }
-
-    #contenedor-enlaces .cuentas a:hover {
-        font-size: 2.6rem;
-        transition: 0.8s;
-        
-    }
-
-    #contenedor-enlaces .pagos a:hover {
-        font-size: 2.6rem;
-        transition: 0.8s;
-        
-    }
-
-    #contenedor-enlaces .prestamos a:hover {
-        font-size: 2.6rem;
-        transition: 0.8s;
-        
-    }
 
     #abrir,
     #cerrar {

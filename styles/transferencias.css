@@ -288,21 +288,6 @@ h2 {
         font-size: 25px;
     }
 
-
-    #contenedor-enlaces
-    {
-        display: none;
-    }
-
-    /*input
-    {
-        display: none;
-    }*/
-
-    input:checked ~#contenedor-enlaces{
-        display: block;
-    }
-
     @media screen and (max-device-width:850px) and (max-device-height:1280px) {
 
         #montoIngresar, #receptor, #remitente, #metodo, .importes{
