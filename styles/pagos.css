@@ -39,7 +39,6 @@ header figure {
     left: 20px;
 }
 
-
 #menu {
     display: inline-block;
 }
@@ -49,7 +48,7 @@ header figure {
 }
 
 #contenedor-enlaces {
-    padding-top: 50px;
+    padding-top: 2px;
     max-width: 20vw;
     min-width: 20vw;
     min-height: 100vh;
@@ -60,72 +59,42 @@ header figure {
     transition: 0.5s;
 }
 
-#contenedor-enlaces:hover {
-    min-width: 290px;
-    transition: 0.5s;
-}
-
-
-#contenedor-enlaces li {
-    height: 4vw;
-    line-height: 3vw;
-    list-style: none;
-    text-decoration: none;
-    font-size: 2vw;  
-    font-family: 'Inconsolata', monospace;
-    font-weight: 600;
-    margin-bottom: 2vw;
-    padding-left: 10px;
-    padding-right: 15px;
-    background-color: rgb(233, 92, 92);
-    border-radius: 3px;
-    box-shadow: 0px -3px 3px rgb(204, 1, 1) inset,
-    0px 3px 3px rgb(204, 1, 1) inset;
-    
-}
-
-#contenedor-enlaces a:link {
+/* #contenedor-enlaces a:link {
     color: black;
 }
 
 #contenedor-enlaces a:visited {
     color: black;
-}
+} */
 
 
-#contenedor-enlaces li:hover {
+/* #contenedor-enlaces li:hover {
     background-color: rgb(232, 68, 68);
-}
+} */
 
 #contenedor-enlaces .inicio a:hover  {
     font-size: 32px;
     transition: 0.8s;
-    padding-left: 140px;
-    
 }
+
 #contenedor-enlaces .cuentas a:hover  {
     font-size: 32px;
     transition: 0.8s;
-    padding-left: 125px;
-    
 }
+
 #contenedor-enlaces .transf a:hover  {
     font-size: 30px;
     transition: 0.8s;
-    padding-left: 45px;
-    
 }
+
 #contenedor-enlaces .pagos a:hover  {
     font-size: 32px;
     transition: 0.8s;
-    padding-left: 157px;
-    
 }
+
 #contenedor-enlaces .prestamos a:hover  {
     font-size: 32px;
     transition: 0.8s;
-    padding-left: 93px;
-    
 }
 
 #abrir,
@@ -175,4 +144,108 @@ h2 {
     font-size: 2vw;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(97, 97, 97);
+}
+
+@media all and (min-width:1080px) {
+
+  /*COMIENZO MENU */
+
+  #menu img {
+    width: 10vw;
+}
+
+#menu #cerrar {
+    display: none;
+}
+
+#menu #contenedor-enlaces {
+    height: 0;
+    /*altura cambia a cero*/
+    transition: height 1s ease;
+    /*Efecto de transisición*/
+    overflow: hidden;
+    /*oculta lo que sobre salga*/
+}
+
+#contenedor-enlaces a {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.25em;
+    margin-top: 0.25em;
+    text-decoration: none;
+    background-color: grey;
+    padding: 1em;
+    /*genera espacio a la vuelta, lo hace mas "tocable"*/
+    color: black;
+    font-size: 1.2rem;
+}
+
+#menu:target #abrir {
+    display: none;
+    /*oculta la imagen de hamburguesa*/
+}
+
+#menu:target #cerrar {
+    display: block;
+    /*muestra la imagen de x*/
+}
+
+#menu:target #contenedor-enlaces {
+    height: 40vh;
+    transition: height 1.5s ease;
+}
+
+/*FIN MENU */
+}
+
+@media all and (min-width:80px) {
+        /*COMIENZO MENU */
+
+    #menu img {
+        width: 10vw;
+    }
+
+    #menu #cerrar {
+        display: none;
+    }
+
+    #menu #contenedor-enlaces {
+        height: 0;
+        /*altura cambia a cero*/
+        transition: height 1s ease;
+        /*Efecto de transisición*/
+        overflow: hidden;
+        /*oculta lo que sobre salga*/
+    }
+
+    #contenedor-enlaces a {
+        display: block;
+        width: 100%;
+        margin-bottom: 0.25em;
+        margin-top: 0.25em;
+        text-decoration: none;
+        background-color: grey;
+        padding: 1em;
+        /*genera espacio a la vuelta, lo hace mas "tocable"*/
+        color: black;
+        font-size: 1.2rem;
+    }
+
+    #menu:target #abrir {
+        display: none;
+        /*oculta la imagen de hamburguesa*/
+    }
+
+    #menu:target #cerrar {
+        display: block;
+        /*muestra la imagen de x*/
+    }
+
+    #menu:target #contenedor-enlaces {
+        height: 40vh;
+        transition: height 1.5s ease;
+    }
+
+    /*FIN MENU */
+    
 }
