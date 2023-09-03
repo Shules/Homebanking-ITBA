@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
+    font-size: 18px;
 	list-style: none;
     text-decoration: none;
 	border: none;
@@ -27,7 +28,7 @@ header img {
 
 header h1 {
     display: block;
-    font-size: 42px;
+    font-size: 1.5rem;
     margin-left: 6px;
     margin-top: 27px;
 }
@@ -40,6 +41,7 @@ header figure {
 }
 
 #menu {
+    color: #d6d6d6 !important;
     display: inline-block;
 }
 
@@ -48,6 +50,7 @@ header figure {
 }
 
 #contenedor-enlaces {
+    background-color: #d6d6d6 !important;
     padding-top: 2px;
     max-width: 20vw;
     min-width: 20vw;
@@ -55,7 +58,6 @@ header figure {
     display: flex;
     flex-direction: column;   
     border-right: 3.5px solid red;
-    background-color: rgb(255, 255, 255);
     transition: 0.5s;
 }
 
@@ -103,41 +105,44 @@ header figure {
 }
 
 main {
-    background: rgb(254, 156, 156);
+    background: #e9e4e4;
 }
 
 #cont {
+    height: 100vh;
     float: right;
     margin: 0vw 10vw 0vw 0vw;
 }
 
 #montoActual {
-    margin: 30px 0px 0px 15px;
+    margin: 1vw 0vw 0vw 0.5vw;
 }
 
 #montoActual p {
-    font-size: 2vw;
+    font-size: 1vw;
     margin-bottom: 15px;
 }
 
 .container {
+    display: block;
+    margin-top: 2vw;
     margin-bottom: 20px;
     height: 4vw;
     width: 20vw;
-    border: 1px solid rgb(66, 71, 81);
     border-radius: 10px;
     background: white;
     text-align: center;
     line-height: 4vw;
-    box-shadow: inset 0px 0px 5px rgb(0, 0, 0);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
 .info {
     margin-bottom: 15px;
     height: 150px;
     width: 60vw;
-    border: 2px solid black;
     background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    border-radius: 5px;
 }
 
 h2 {
@@ -247,5 +252,88 @@ h2 {
     }
 
     /*FIN MENU */
-    
+    /*COMIENZO FOOTER*/
+    footer {
+        display: flex;
+        flex-direction: row;
+        background-color: #dedfe0;
+    }
+
+    #cond {
+        width: 33%;
+        display: flex;
+        justify-content: start;
+    }
+
+    #cond ul {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+
+    }
+
+    #cond ul li {
+        list-style: none;
+        margin: 3px;
+    }
+
+    #cond ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+
+    #logo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 33%;
+    }
+
+    #logo img {
+        width: 100%;
+
+    }
+
+    #logo figure {
+        width: 60px;
+
+    }
+
+    #logo h1 {
+        font-size: 20px;
+    }
+
+    #redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        width: 33%;
+
+    }
+
+    #redes ul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0.5em;
+
+    }
+
+    #redes ul li {
+        margin: 0.5em;
+        list-style: none;
+
+    }
+
+    #redes ul li img {
+        width: 3vh;
+
+    }
+
+    #redes h4 {
+        font-size: 25px;
+    }
 }
