@@ -1,53 +1,42 @@
-*{
-	margin: 0;
-	padding: 0;
-    font-size: 18px;
-	list-style: none;
-    text-decoration: none;
-	border: none;
-	outline: none;
+/* CSS GENERAL*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-    
-header {
-    display: flex;
-    max-width: 100%;
-    max-height: 105px;
-    min-height: 105px;
-    align-content: center;
-    border-bottom: 5px solid red;
-    border-radius: 5px;
-}
+/* COMIENZO M0VIL*/
+@media all and (max-width:414px) {
+    /*COMIENZO HEADER*/
 
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-header img {
-    max-width: 105px;
-    min-width: 105px;
-}
-
+    header img {
+        width: 100%;
 
 header h1 {
     display: block;
-    font-size: 1.5rem;
+    font-size: 42px;
     margin-left: 6px;
     margin-top: 27px;
 }
 
 
-header figure {
-    max-width: 110px;
-    max-height: 110px;
-    left: 20px;
-}
+    header figure {
+        width: 15%;
+
+    }
 
 #menu {
     color: #d6d6d6 !important;
     display: inline-block;
 }
 
-#menu img {
-    display: none;
-}
+    }
 
 #contenedor-enlaces {
     background-color: #d6d6d6 !important;
@@ -61,9 +50,10 @@ header figure {
     transition: 0.5s;
 }
 
-/* #contenedor-enlaces a:link {
-    color: black;
-}
+    #cerrar-sesion:hover {
+        background-color: red;
+        transition: 0.6s;
+    }
 
 #contenedor-enlaces a:visited {
     color: black;
@@ -153,62 +143,18 @@ h2 {
 
 @media all and (min-width:1080px) {
 
-  /*COMIENZO MENU */
+    /*COMIENZO MENU */
 
-  #menu img {
-    width: 10vw;
-}
-
-#menu #cerrar {
-    display: none;
-}
-
-#menu #contenedor-enlaces {
-    height: 0;
-    /*altura cambia a cero*/
-    transition: height 1s ease;
-    /*Efecto de transisición*/
-    overflow: hidden;
-    /*oculta lo que sobre salga*/
-}
-
-#contenedor-enlaces a {
-    display: block;
-    width: 100%;
-    margin-bottom: 0.25em;
-    margin-top: 0.25em;
-    text-decoration: none;
-    background-color: grey;
-    padding: 1em;
-    /*genera espacio a la vuelta, lo hace mas "tocable"*/
-    color: black;
-    font-size: 1.2rem;
-}
-
-#menu:target #abrir {
-    display: none;
-    /*oculta la imagen de hamburguesa*/
-}
-
-#menu:target #cerrar {
-    display: block;
-    /*muestra la imagen de x*/
-}
-
-#menu:target #contenedor-enlaces {
-    height: 40vh;
-    transition: height 1.5s ease;
-}
-
-/*FIN MENU */
-}
-
-@media all and (min-width:80px) {
-        /*COMIENZO MENU */
-
-    #menu img {
-        width: 10vw;
+    #menu #abrir {
+        width: 50px;   
     }
+
+    #menu #cerrar {
+        width: 40px;
+        padding-left: 8px; 
+        margin-bottom: 10px;  
+    }
+
 
     #menu #cerrar {
         display: none;
@@ -221,6 +167,12 @@ h2 {
         /*Efecto de transisición*/
         overflow: hidden;
         /*oculta lo que sobre salga*/
+        
+    }
+
+    #contenedor-enlaces ul {
+        padding: 0;
+        list-style: none;
     }
 
     #contenedor-enlaces a {
@@ -234,6 +186,7 @@ h2 {
         /*genera espacio a la vuelta, lo hace mas "tocable"*/
         color: black;
         font-size: 1.2rem;
+        
     }
 
     #menu:target #abrir {
@@ -250,6 +203,8 @@ h2 {
         height: 40vh;
         transition: height 1.5s ease;
     }
+
+
 
     /*FIN MENU */
     /*COMIENZO FOOTER*/

@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     border: 0;
+    list-style: none;
+    
 }
 
 /* COMIENZO M0VIL*/
@@ -30,32 +32,20 @@
 
     }
 
-    #cerrar-sesion {   
-        position: absolute;
-        margin: 8em 0 0 60%;
-        padding: 0.5em;
-        background-color: rgb(255, 255, 255);
-        border-radius: 8px;
-    }
-
-    #cerrar-sesion:hover {
-        background-color: red;
-        transition: 0.6s;
-    }
-}
-
-    /*Menú*/
     
-    #menu {
-        float: left;
-        
+
+    /*FIN HEADER*/
+
+    /*COMIENZO MENU */
+
+    #menu #abrir {
+        width: 50px;
     }
 
-    #menu img {
-        display: none;
-    }
-    #menu img {
-        width: 4vw;
+    #menu #cerrar {
+        width: 40px;
+        padding-left: 8px;
+        margin-bottom: 10px;
     }
 
 
@@ -63,16 +53,20 @@
         display: none;
     }
 
-
     #menu #contenedor-enlaces {
-        height: 0%;
+        height: 0;
         /*altura cambia a cero*/
         transition: height 1s ease;
         /*Efecto de transisición*/
         overflow: hidden;
         /*oculta lo que sobre salga*/
+
     }
 
+    #contenedor-enlaces ul {
+        padding: 0;
+        list-style: none;
+    }
 
     #contenedor-enlaces a {
         display: block;
@@ -85,112 +79,353 @@
         /*genera espacio a la vuelta, lo hace mas "tocable"*/
         color: black;
         font-size: 1.2rem;
-    }
 
+    }
 
     #menu:target #abrir {
         display: none;
         /*oculta la imagen de hamburguesa*/
     }
 
-
     #menu:target #cerrar {
         display: block;
         /*muestra la imagen de x*/
     }
-
 
     #menu:target #contenedor-enlaces {
         height: 40vh;
         transition: height 1.5s ease;
     }
 
-    /*Menú*/
 
-    .menu-transacciones
-    {
-        padding-left: 5%;
-        padding-right: 5%;
+
+    /*FIN MENU */
+
+    /*COMIENZO MAIN*/
+
+    /*COMIENZO FOOTER*/
+    footer {
         display: flex;
-        flex-direction: column;
-        vertical-align: middle;
-        margin-top: -36px;
-        padding-bottom: 1%;
-        background-color: rgb(255, 255, 255);
+        flex-direction: row;
+        background-color: #dedfe0;
+        margin-top: 10%;
+        font-size: 0.5em;
     }
 
-    #montoIngresar, #receptor, #remitente, #metodo, .importes
-    {
+    #cond {
+        width: 33%;
+        display: flex;
+        justify-content: start;
+    }
+
+    #cond ul {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+
+    }
+
+    #cond ul li {
+        list-style: none;
+        margin: 3px;
+    }
+
+    #cond ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+    }
+
+    #logo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 33%;
+        background-color: #dedfe0;
+    }
+
+    #logo img {
+        width: 100%;
+
+    }
+
+    #logo figure {
+        width: 60px;
+
+    }
+
+    #logo h1 {
+        font-size: 20px;
+    }
+
+    #redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+        width: 33%;
+
+    }
+
+    #redes ul {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0.5em;
+
+    }
+
+    #redes ul li {
+        margin: 0.5em;
+        list-style: none;
+
+    }
+
+    #redes ul li img {
+        width: 3vh;
+
+    }
+
+    #redes h4 {
+        font-size: 25px;
+    }
+
+    /*FIN fOOTER */
+
+}
+
+/* FIN M0VIL*/
+/* COMIENZO MONITO*/
+@media all and (min-width:1080px) {
+
+    /*COMIENZO CUERPO*/
+    #cuerpo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    aside {
+        width: 20%;
+    }
+
+    /*COMIENZO HEADER*/
+
+    header {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        align-items: center;
+        height: 15vh;
+        border-bottom: red solid;
+        
+    }
+
+    header img {
+        width: 100%;
+
+    }
+
+    header figure {
+        width: 8vw;
+
+    }
+
+    header h1 {
+        font-size: 42px;
+
+    }
+
+    #cerrar-sesion {
+        margin: 5em 1em 0 auto;
+        padding: 0.5em;
+        background-color: rgb(255, 255, 255);
+        border-radius: 8px;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    #cerrar-sesion:hover {
+        background-color: red;
+        transition: 0.6s;
+    }
+
+    /*FIN HEADER*/
+    /*COMIENZO MAIN*/
+    main {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255);
+        
+    }
+
+    .menu-transacciones {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        max-width: 80vw;
+        margin: 0 0 0 20.5em;
+        padding: 1em 0 0 1em;
+        
+        border-left: solid red;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .menu-transacciones h2 {
+        background-color: red;
+        padding: 1.5em;
+        color: white;
+    }
+
+    #montoIngresar, #receptor, #remitente, #metodo, #importes {
         box-shadow: 10px 8px 8px darkgrey;
         border: solid #ff1111;
-        border-top-style:inset ;
+        border-top-style: inset;
         border-width: 8px 3px;
         background-color: white;
         display: block;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Rubik', sans-serif;
         text-align: center;
-        font-size: 25px;   
+        font-size: 25px;
         color: black;
         border-radius: 5px;
-        padding: 0%;
-        margin: 2%;
         margin-right: 15%;
         margin-left: 15%;
         box-shadow: 100% black;
     }
 
 
-    /*select
-    {
-        margin-left: 5px;
-        border-radius: 5px;
-        text-align: center;
-        border: 3px solid lightcoral;
-        background-color: lightblue;
-    }*/
 
-    input, select
-    {
+    /*select
+{
+    margin-left: 5px;
+    border-radius: 5px;
+    text-align: center;
+    border: 3px solid lightcoral;
+    background-color: lightblue;
+}*/
+
+    input,
+    select {
+        position: relative;
         display: block;
         margin: auto;
-        margin-bottom: 1%;
-        text-align: center;
-        border: 3px solid rgb(222, 22, 22);
-        text-align: center;
-        background-color: white;
+        border: 2px solid rgb(222, 22, 22);
     }
 
-    #botonContinuar
-    {
-        align-items: center;
+    button, input, optgroup, select, textarea {
         margin: auto;
     }
-    #continuar{
-        color: white;
+
+    #botonContinuar {
+        align-items: center;
+        margin: -2% auto auto auto;
+    }
+
+    #continuar {
+        background-color: white;
         box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.719);
-        height: 45px;        
-        border-radius: 5px;
+        height: 45px;
+        border-radius: 10px;
         padding: 3px 60px;
-        background-color: rgb(245, 34, 34);
-        box-shadow: darkgrey;
+        border: solid red;
         font-size: 15px;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Rubik', sans-serif;
         line-height: 18px;
         font-weight: bold;
         cursor: pointer;
     }
-    
-    #continuar:hover{
-        background-color: rgb(238, 75, 75);
+
+    #continuar:hover {
+        color: white;
+        background-color: red;
     }
 
+
+    /*FIN MAIN*/
+    /*COMIENZO MENU*/
+    #menu img {
+        display: none;
+    }
+
+
+
+    #contenedor-enlaces a {
+        display: block;
+        max-width: 100%;
+        margin-bottom: 0.25em;
+        margin-top: 0.25em;
+        text-decoration: none;
+        background-color: grey;
+        padding: 0.6em;
+        /*genera espacio a la vuelta, lo hace mas "tocable"*/
+        color: black;
+        font-size: 1.9rem;
+    }
+
+
+    #contenedor-enlaces {
+        display: flex;
+        flex-direction: column;
+        min-width: 330px;
+        max-width: 330px;
+        min-height: 100vh;
+        font-family: 'Inconsolata', monospace !important;
+    }
+
+    #contenedor-enlaces ul {
+        padding-left: 0px;
+    }
+
+
+    #contenedor-enlaces li {
+        min-width: 100%;
+        margin-top: 1%;
+        list-style: none;
+    }
+
+    #contenedor-enlaces .transf a:hover {
+        font-size: 2.4rem;
+        transition: 0.8s;
+    }
+
+    #contenedor-enlaces .inicio a:hover {
+        font-size: 2.6rem;
+        transition: 0.8s;
+    }
+
+    #contenedor-enlaces .cuentas a:hover {
+        font-size: 2.6rem;
+        transition: 0.8s;
+    }
+
+    #contenedor-enlaces .pagos a:hover {
+        font-size: 2.6rem;
+        transition: 0.8s;
+
+    }
+
+    #contenedor-enlaces .prestamos a:hover {
+        font-size: 2.6rem;
+        transition: 0.8s;
+    }
+
+    #abrir,
+    #cerrar {
+        display: none;
+    }
+
+    /*FIN MENU */
+    /*COMIENZO FOOTER*/
     footer {
-        margin: auto;
+        
+        margin-top: 12em;
         display: flex;
         flex-direction: row;
         border-top: red solid;
-        padding-bottom: 10px;
+        background-color: #dedfe0;
     }
+
     #cond {
         width: 33%;
         display: flex;
@@ -228,8 +463,8 @@
     }
 
     #logo figure {
-        width: 60px;
-
+        width: 6vw;
+        margin-bottom: -16px;
     }
 
     #logo h1 {
@@ -237,7 +472,7 @@
     }
 
     #redes {
-        display: flexbox;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -266,95 +501,8 @@
         font-size: 25px;
     }
 
-    @media screen and (max-device-width:850px) and (max-device-height:1280px) {
+    /*FIN fOOTER */
 
-        #montoIngresar, #receptor, #remitente, #metodo, .importes{
-            margin-left: 5%;
-            margin-right: 5%;
-        }
+}
 
-
-        footer {
-            display: flexbox;
-            font-size:small;
-        }
-
-        #logo img {
-            width: 90%;
-    
-        }
-    
-        #logo figure {
-            width: 50px;
-    
-        }
-    
-        #logo h1 {
-            font-size: 20px;
-        }
-
-        #redes ul {
-            display: block;
-            width: auto;
-            
-        }
-
-        input, select
-        {
-            display: block;
-            margin: auto;
-            margin-bottom: 2%;
-            border-radius: 5px;
-            text-align: center;
-            padding: 0px 0px;
-        }
-        
-        /*Menú*/
-        #menu img {
-            width: 10vw;
-        }
-    
-        #menu #cerrar {
-            display: none;
-        }
-    
-        #menu #contenedor-enlaces {
-            height: 0;
-            /*altura cambia a cero*/
-            transition: height 1s ease;
-            /*Efecto de transisición*/
-            overflow: hidden;
-            /*oculta lo que sobre salga*/
-        }
-    
-        #contenedor-enlaces a {
-            display: block;
-            width: 100%;
-            margin-bottom: 0.25em;
-            margin-top: 0.25em;
-            text-decoration: none;
-            background-color: grey;
-            padding: 1em;
-            /*genera espacio a la vuelta, lo hace mas "tocable"*/
-            color: black;
-            font-size: 1.2rem;
-        }
-    
-        #menu:target #abrir {
-            display: none;
-            /*oculta la imagen de hamburguesa*/
-        }
-    
-        #menu:target #cerrar {
-            display: block;
-            /*muestra la imagen de x*/
-        }
-    
-        #menu:target #contenedor-enlaces {
-            height: 40vh;
-            transition: height 1.5s ease;
-        }
-    
-
-
-    }
+/* FIN MONITOR*/
