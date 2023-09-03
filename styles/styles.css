@@ -623,8 +623,8 @@
     }
 
     #logo figure {
-        width: 60px;
-
+        width: 6vw;
+        margin-bottom: -16px;
     }
 
     #logo h1 {
