@@ -503,6 +503,7 @@
     aside {
         display: flex;
     }
+
     #contenedor-enlaces a {
         display: block;
         width: 100%;
@@ -520,7 +521,10 @@
     #contenedor-enlaces {
         display: flex;
         flex-direction: column;
+        min-width: 330px;
+        max-width: 330px;
         min-height: 100vh;
+        
         font-family: 'Inconsolata', monospace;
     }
 
@@ -539,6 +543,33 @@
     #contenedor-enlaces a{
         transition: 0.8s;
     }
+
+    #contenedor-enlaces .transf a:hover {
+        font-size: 2.4rem;
+        transition: 0.8s;
+    }
+
+    #contenedor-enlaces .inicio a:hover {
+        font-size: 2.6rem;
+        transition: 0.8s;
+    }
+
+    #contenedor-enlaces .cuentas a:hover {
+        font-size: 2.6rem;
+        transition: 0.8s;
+    }
+
+    #contenedor-enlaces .pagos a:hover {
+        font-size: 2.6rem;
+        transition: 0.8s;
+
+    }
+
+    #contenedor-enlaces .prestamos a:hover {
+        font-size: 2.6rem;
+        transition: 0.8s;
+    }
+
 
 
     #abrir,

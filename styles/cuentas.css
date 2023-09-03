@@ -429,6 +429,7 @@
         min-width: 100%;
         margin-top: 1%;
         list-style: none;
+        display: flex;
     }
 
     #contenedor-enlaces .transf a:hover {
