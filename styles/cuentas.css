@@ -65,7 +65,7 @@
     #menu #contenedor-enlaces {
         height: 0;
         /*altura cambia a cero*/
-        transition: height 1s ease;
+        transition: height 1s ease-in-out;
         /*Efecto de transisición*/
         overflow: hidden;
         /*oculta lo que sobre salga*/

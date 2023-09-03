@@ -594,7 +594,7 @@
     }
 
     #logo img {
-        width: 100%;
+        width: 90%;
 
     }
 
@@ -618,19 +618,33 @@
     }
 
     #redes ul {
-        display: flex;
-        flex-direction: row;
+        display: block;
+        width: auto;
 
     }
 
-    #redes ul li {
-        margin: 1em;
-        list-style: none;
+    .prestamo-menu {
+        background-color: white;
+        margin: 10%;
+        margin-top: 6%;
+        display: flexbox;
+        flex-direction: column;
     }
 
-    #redes ul li img {
-        width: 3vh;
+}
 
+
+#abrir,
+#cerrar {
+    display: none;
+}
+
+@media all and (min-width:1080px) {
+
+    /*COMIENZO MENU */
+
+    #menu img {
+        width: 10vw;
     }
 
     #redes h4 {
