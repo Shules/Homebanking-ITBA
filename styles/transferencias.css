@@ -8,7 +8,7 @@
 }
 
 /* COMIENZO M0VIL*/
-@media all and (max-width:414px) {
+@media all and (max-width:1080px) {
     /*COMIENZO HEADER*/
 
     header {
@@ -58,7 +58,7 @@
         /*altura cambia a cero*/
         transition: height 1s ease;
         /*Efecto de transisición*/
-        overflow: hidden;
+        overflow: scroll;
         /*oculta lo que sobre salga*/
 
     }
@@ -102,6 +102,49 @@
     /*FIN MENU */
 
     /*COMIENZO MAIN*/
+
+    #titulo
+    {
+        text-align: justify;
+        text-align: left;
+        margin-right: 50px;
+    }
+
+    #titulo h2{
+        text-align: center;
+    }
+
+    .menu-transacciones{
+        margin-left: 50px;
+    }
+
+    #remitente,#importes, #montoIngresar,#receptor,#metodo
+    {
+        border: solid red;
+        border-style: inset;
+        margin-right: 20%;
+    }
+
+    #montoIngresar input, #receptor input {
+        border: solid red;
+        border-style: inset;
+    }
+
+    #botonContinuar
+    {
+        margin-left :35%;
+    }
+
+    #botonContinuar button
+    {
+        color: white;
+        border:solid red ;
+        border-style: inset;
+        background-color: red;
+    }
+
+
+    /*FIN MAIN*/
 
     /*COMIENZO FOOTER*/
     footer {
@@ -295,16 +338,6 @@
     }
 
 
-
-    /*select
-{
-    margin-left: 5px;
-    border-radius: 5px;
-    text-align: center;
-    border: 3px solid lightcoral;
-    background-color: lightblue;
-}*/
-
     input,
     select {
         position: relative;
@@ -418,8 +451,8 @@
     /*FIN MENU */
     /*COMIENZO FOOTER*/
     footer {
-        
-        margin-top: 12em;
+        display: inline;
+        margin-top: 575px;
         display: flex;
         flex-direction: row;
         border-top: red solid;
